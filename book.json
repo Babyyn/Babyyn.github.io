@@ -1,0 +1,24 @@
+{
+    "title":"Android",
+    "description":"Android",
+    "author":"a284628487",
+    "output.name":"site",
+    "language":"zh-hans",
+    "gitbook":"3.2.3",
+    "links":{
+        "sidebar":{
+        }
+    },
+    "plugins":[
+        "heading-anchors",
+        "anchor-navigation-ex"
+    ],
+    "pluginsConfig": {
+        "anchor-navigation-ex": {
+            "isShowTocTitleIcon": false,
+            "tocLevel1Icon": "fa fa-hand-o-right",
+            "tocLevel2Icon": "fa fa-hand-o-right",
+            "tocLevel3Icon": "fa fa-hand-o-right"
+        }        
+    }
+}
