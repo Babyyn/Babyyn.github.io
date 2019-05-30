@@ -1,0 +1,533 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>RxAndroid使用UI线程 · Android</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="a284628487">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="RxJava-Flow.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Welcome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    RxJava
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="RxJava-Operator.html">
+            
+                <a href="RxJava-Operator.html">
+            
+                    
+                    RxJava常用操作符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="RxJava-Flow.html">
+            
+                <a href="RxJava-Flow.html">
+            
+                    
+                    RxJava流程分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="RxJava-RxAndroid.html">
+            
+                <a href="RxJava-RxAndroid.html">
+            
+                    
+                    RxAndroid使用UI线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    OkHttp
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../OkHttp/OkHttp.html">
+            
+                <a href="../OkHttp/OkHttp.html">
+            
+                    
+                    OkHttp网络请求框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../OkHttp/OkHttp-Interceptor.html">
+            
+                <a href="../OkHttp/OkHttp-Interceptor.html">
+            
+                    
+                    OkHttp拦截器Interceptor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >RxAndroid使用UI线程</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#rxandroid&#x4F7F;&#x7528;ui&#x7EBF;&#x7A0B;"><b>1. </b>RxAndroid&#x4F7F;&#x7528;UI&#x7EBF;&#x7A0B;</a></li><ul><li><span class="title-icon "></span><a href="#mainthread"><b>1.1. </b>mainThread()</a></li><li><span class="title-icon "></span><a href="#handlerscheduler"><b>1.2. </b>HandlerScheduler</a></li><li><span class="title-icon "></span><a href="#handlerworker"><b>1.3. </b>HandlerWorker</a></li><li><span class="title-icon "></span><a href="#scheduledrunnable"><b>1.4. </b>ScheduledRunnable</a></li><li><span class="title-icon "></span><a href="#example"><b>1.5. </b>Example</a></li></ul></ul></div><a href="#rxandroid&#x4F7F;&#x7528;ui&#x7EBF;&#x7A0B;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="rxandroid&#x4F7F;&#x7528;ui&#x7EBF;&#x7A0B;"><a name="rxandroid&#x4F7F;&#x7528;ui&#x7EBF;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#rxandroid&#x4F7F;&#x7528;ui&#x7EBF;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>1. RxAndroid&#x4F7F;&#x7528;UI&#x7EBF;&#x7A0B;</h1>
+<p>&#x5728;RxJava&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x5728;&#x4E3B;&#x7EBF;&#x7A0B;&#x4E2D;&#x5904;&#x7406;&#x4E00;&#x4E2A;&#x5F02;&#x6B65;&#x4EFB;&#x52A1;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x901A;&#x5E38;&#x4F7F;&#x7528;AndroidSchedulers.mainThread()&#x6765;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;Scheduler&#x3002;</p>
+<h2 id="mainthread"><a name="mainthread" class="anchor-navigation-ex-anchor" href="#mainthread"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. mainThread()</h2>
+<p>&#x901A;&#x8FC7;AndroidSchedulers.mainThread()&#xFF0C;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5230;&#x4E00;&#x4E2A;Scheduler&#xFF0C;&#x5728;&#x8BE5;Scheduler&#x4E0A;&#x8FDB;&#x884C;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x90FD;&#x662F;&#x5728;UI&#x7EBF;&#x7A0B;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">final</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AndroidSchedulers</span> </span>{
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MainHolder</span> </span>{
+        <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> Scheduler DEFAULT
+            = <span class="hljs-keyword">new</span> HandlerScheduler(<span class="hljs-keyword">new</span> Handler(Looper.getMainLooper()), <span class="hljs-keyword">false</span>);
+    }
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> Scheduler MAIN_THREAD = RxAndroidPlugins.initMainThreadScheduler(
+            <span class="hljs-keyword">new</span> Callable&lt;Scheduler&gt;() {
+                <span class="hljs-meta">@Override</span> <span class="hljs-function"><span class="hljs-keyword">public</span> Scheduler <span class="hljs-title">call</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception </span>{
+                    <span class="hljs-keyword">return</span> MainHolder.DEFAULT;
+                }
+            });
+
+    <span class="hljs-comment">/** A {<span class="hljs-doctag">@link</span> Scheduler} which executes actions on the Android main thread. */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Scheduler <span class="hljs-title">mainThread</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> RxAndroidPlugins.onMainThreadScheduler(MAIN_THREAD);
+    }
+}
+</code></pre>
+<p>AndroidSchedulers.mainThread()&#x65B9;&#x6CD5;&#xFF0C;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x5355;&#x4F8B;&#x7684;HandlerScheduler&#x5BF9;&#x8C61;&#x3002;</p>
+<h2 id="handlerscheduler"><a name="handlerscheduler" class="anchor-navigation-ex-anchor" href="#handlerscheduler"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. HandlerScheduler</h2>
+<p>HandlerScheduler&#x6301;&#x6709;&#x4E00;&#x4E2A;Handler&#x5BF9;&#x8C61;&#xFF0C;&#x7EBF;&#x7A0B;&#x5207;&#x6362;&#x5C31;&#x662F;&#x57FA;&#x4E8E;&#x8FD9;&#x4E2A;Handler&#x5BF9;&#x8C61;&#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x4ECE;&#x4E0A;&#x9762;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;&#x4E2D;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8FD9;&#x4E2A;Handler&#x5BF9;&#x8C61;&#x4F20;&#x5165;&#x7684;&#x662F;<code>new Handler(Looper.getMainLooper())</code>&#xFF0C;&#x6240;&#x4EE5;&#x901A;&#x8FC7;Handler&#x6765;&#x5904;&#x7406;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x5C31;&#x662F;&#x5728;Android&#x7684;&#x4E3B;&#x7EBF;&#x7A0B;&#x5F53;&#x4E2D;&#x6267;&#x884C;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">final</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HandlerScheduler</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Scheduler</span> </span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Handler handler;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">boolean</span> async;
+
+    HandlerScheduler(Handler handler, <span class="hljs-keyword">boolean</span> async) {
+        <span class="hljs-keyword">this</span>.handler = handler;
+        <span class="hljs-keyword">this</span>.async = async;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-meta">@SuppressLint</span>(<span class="hljs-string">&quot;NewApi&quot;</span>) <span class="hljs-comment">// Async will only be true when the API is available to call.</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Disposable <span class="hljs-title">scheduleDirect</span><span class="hljs-params">(Runnable run, <span class="hljs-keyword">long</span> delay, TimeUnit unit)</span> </span>{
+        <span class="hljs-keyword">if</span> (run == <span class="hljs-keyword">null</span>) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> NullPointerException(<span class="hljs-string">&quot;run == null&quot;</span>);
+        <span class="hljs-keyword">if</span> (unit == <span class="hljs-keyword">null</span>) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> NullPointerException(<span class="hljs-string">&quot;unit == null&quot;</span>);
+
+        run = RxJavaPlugins.onSchedule(run);
+        ScheduledRunnable scheduled = <span class="hljs-keyword">new</span> ScheduledRunnable(handler, run);
+        Message message = Message.obtain(handler, scheduled);
+        <span class="hljs-keyword">if</span> (async) {
+            message.setAsynchronous(<span class="hljs-keyword">true</span>);
+        }
+        handler.sendMessageDelayed(message, unit.toMillis(delay));
+        <span class="hljs-keyword">return</span> scheduled;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Worker <span class="hljs-title">createWorker</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> HandlerWorker(handler, async);
+    }
+}
+</code></pre>
+<p>&#x8BE5;&#x7C7B;&#x8FD8;&#x6709;scheduleDirect&#x65B9;&#x6CD5;&#x548C;createWorker&#x65B9;&#x6CD5;&#xFF0C;&#x524D;&#x8005;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;Runnable&#x5E76;&#x4F7F;&#x7528;&#x8BE5;handler&#x6765;&#x5904;&#x7406;&#x8BE5;Runnable&#x3002;&#x540E;&#x8005;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5185;&#x90E8;&#x7C7B;HandlerWorker&#x3002;</p>
+<h2 id="handlerworker"><a name="handlerworker" class="anchor-navigation-ex-anchor" href="#handlerworker"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. HandlerWorker</h2>
+<p>HandlerWorker&#x7EE7;&#x627F;&#x81EA;Worker&#xFF0C;&#x5E76;&#x8986;&#x5199;&#x4E86;schedule&#x65B9;&#x6CD5;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x5B9E;&#x73B0;&#x7684;&#x529F;&#x80FD;&#x548C;HandlerScheduler.scheuleDirect&#x57FA;&#x672C;&#x76F8;&#x540C;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HandlerWorker</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Worker</span> </span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Handler handler;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">boolean</span> async;
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">volatile</span> <span class="hljs-keyword">boolean</span> disposed;
+
+    HandlerWorker(Handler handler, <span class="hljs-keyword">boolean</span> async) {
+        <span class="hljs-keyword">this</span>.handler = handler;
+        <span class="hljs-keyword">this</span>.async = async;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-meta">@SuppressLint</span>(<span class="hljs-string">&quot;NewApi&quot;</span>) <span class="hljs-comment">// Async will only be true when the API is available to call.</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> Disposable <span class="hljs-title">schedule</span><span class="hljs-params">(Runnable run, <span class="hljs-keyword">long</span> delay, TimeUnit unit)</span> </span>{
+        <span class="hljs-keyword">if</span> (disposed) {
+            <span class="hljs-keyword">return</span> Disposables.disposed();
+        }
+        ScheduledRunnable scheduled = <span class="hljs-keyword">new</span> ScheduledRunnable(handler, run);
+        Message message = Message.obtain(handler, scheduled);
+        message.obj = <span class="hljs-keyword">this</span>; <span class="hljs-comment">// Used as token for batch disposal of this worker&apos;s runnables.</span>
+        <span class="hljs-keyword">if</span> (async) {
+            message.setAsynchronous(<span class="hljs-keyword">true</span>);
+        }
+
+        handler.sendMessageDelayed(message, unit.toMillis(delay));
+        <span class="hljs-comment">// Re-check disposed state for removing in case we were racing a call to dispose().</span>
+        <span class="hljs-keyword">if</span> (disposed) {
+            handler.removeCallbacks(scheduled);
+            <span class="hljs-keyword">return</span> Disposables.disposed();
+        }
+        <span class="hljs-keyword">return</span> scheduled;
+    }
+}
+</code></pre>
+<h2 id="scheduledrunnable"><a name="scheduledrunnable" class="anchor-navigation-ex-anchor" href="#scheduledrunnable"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. ScheduledRunnable</h2>
+<p>ScheduledRunnable&#x7EE7;&#x627F;&#x81EA;Runnable&#xFF0C;&#x771F;&#x6B63;&#x7684;&#x4EFB;&#x52A1;&#x662F;&#x7531;&#x5916;&#x90E8;&#x4F20;&#x5165;&#x8FDB;&#x6765;&#x7684;Runnable&#xFF0C;&#x8FD9;&#x6837;&#x5C01;&#x88C5;&#x4E00;&#x5C42;&#x7528;&#x4E8E;&#x5BF9;&#x4EFB;&#x52A1;&#x8FDB;&#x884C;&#x7BA1;&#x7406;&#xFF0C;dispose()&#x65B9;&#x6CD5;&#x8868;&#x793A;&#x79FB;&#x9664;&#x4EFB;&#x52A1;&#xFF0C;isDisposed()&#x65B9;&#x6CD5;&#x8868;&#x793A;&#x4EFB;&#x52A1;&#x662F;&#x5426;&#x79FB;&#x9664;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ScheduledRunnable</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Runnable</span>, <span class="hljs-title">Disposable</span> </span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Handler handler;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Runnable delegate;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">volatile</span> <span class="hljs-keyword">boolean</span> disposed; <span class="hljs-comment">// Tracked solely for isDisposed().</span>
+
+    ScheduledRunnable(Handler handler, Runnable delegate) {
+        <span class="hljs-keyword">this</span>.handler = handler;
+        <span class="hljs-keyword">this</span>.delegate = delegate;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">try</span> {
+            delegate.run();
+        } <span class="hljs-keyword">catch</span> (Throwable t) {
+            RxJavaPlugins.onError(t);
+        }
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">dispose</span><span class="hljs-params">()</span> </span>{
+        handler.removeCallbacks(<span class="hljs-keyword">this</span>);
+        disposed = <span class="hljs-keyword">true</span>;
+    }
+
+      <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isDisposed</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> disposed;
+    }  
+}
+</code></pre>
+<h2 id="example"><a name="example" class="anchor-navigation-ex-anchor" href="#example"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. Example</h2>
+<p>&#x5047;&#x8BBE;&#x5728;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x4E2D;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;&#xFF0C;&#x901A;&#x8FC7;&#x8DDF;&#x8E2A;&#x5206;&#x6790;&#x5B83;&#x7684;&#x6D41;&#x7A0B;&#x6765;&#x770B;HandlerScheduler&#x662F;&#x600E;&#x4E48;&#x5207;&#x6362;&#x5230;observeOn&#x6240;&#x6307;&#x5B9A;&#x7684;UI&#x7EBF;&#x7A0B;&#x7684;&#x3002;</p>
+<pre><code class="lang-java">Observable.fromArray(<span class="hljs-string">&quot;1&quot;</span>, <span class="hljs-string">&quot;2&quot;</span>) <span class="hljs-comment">// step1</span>
+        .observeOn(AndroidSchedulers.mainThread()) <span class="hljs-comment">// step2</span>
+        .subscribe(<span class="hljs-keyword">new</span> Observer&lt;String&gt;() { <span class="hljs-comment">// step3</span>
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onSubscribe</span><span class="hljs-params">(Disposable d)</span> </span>{
+                Log.e(TAG, <span class="hljs-string">&quot;onSubscribe&quot;</span>);
+            }
+
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onNext</span><span class="hljs-params">(String s)</span> </span>{
+                Log.e(TAG, <span class="hljs-string">&quot;onNext: &quot;</span> + s);
+            }
+
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onComplete</span><span class="hljs-params">()</span> </span>{
+            }
+        });
+</code></pre>
+<ol>
+<li>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;ObservableFromArray&#x5BF9;&#x8C61;&#xFF0C;&#x8BE5;&#x5BF9;&#x8C61;&#x91CC;&#x9762;&#x5305;&#x542B;&#x4E86;&#x6570;&#x636E;&#x6E90;&#x3002;</li>
+<li>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;ObservableObserveOn&#x5BF9;&#x8C61;&#xFF0C;&#x8BE5;&#x5BF9;&#x8C61;&#x6307;&#x5B9A;&#x4E86;&#x8BA2;&#x9605;&#x8005;&#x8BA2;&#x9605;&#x4E8B;&#x4EF6;&#x6240;&#x5728;&#x7684;&#x7EBF;&#x7A0B;&#x3002;</li>
+<li>subscribe&#x5F00;&#x59CB;&#x8BA2;&#x9605;&#x3002;</li>
+</ol>
+<p><img src="../images/RxJava-RxAndroid.png" alt="RxJava-Single"></p>
+<h4 id="observableobservesubscribeactual"><a name="observableobservesubscribeactual" class="anchor-navigation-ex-anchor" href="#observableobservesubscribeactual"><i class="fa fa-link" aria-hidden="true"></i></a>ObservableObserve.subscribeActual</h4>
+<p>&#x8BE5;&#x65B9;&#x6CD5;&#x4E2D;&#x4F7F;&#x7528;scheduler.createWorker()&#x521B;&#x5EFA;&#x4E00;&#x4E2A;Worker&#x5B9E;&#x4F8B;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x8BE5;Worker&#x5B9E;&#x4F8B;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x53C8;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;ObserveOnObserver&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">subscribeActual</span><span class="hljs-params">(Observer&lt;? <span class="hljs-keyword">super</span> T&gt; observer)</span> </span>{
+    <span class="hljs-keyword">if</span> (scheduler <span class="hljs-keyword">instanceof</span> TrampolineScheduler) {
+        source.subscribe(observer);
+    } <span class="hljs-keyword">else</span> {
+        Scheduler.Worker w = scheduler.createWorker();
+        source.subscribe(<span class="hljs-keyword">new</span> ObserveOnObserver&lt;T&gt;(observer, w, delayError, bufferSize));
+    }
+}
+</code></pre>
+<h4 id="observeonobserverschedule"><a name="observeonobserverschedule" class="anchor-navigation-ex-anchor" href="#observeonobserverschedule"><i class="fa fa-link" aria-hidden="true"></i></a>ObserveOnObserver.schedule</h4>
+<p>&#x8BA2;&#x9605;&#x4E8B;&#x4EF6;&#x5728;&#x4E8B;&#x4EF6;&#x4E0B;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#x901A;&#x8FC7;&#x8BE5;ObserveOnObserver&#x5411;&#x4E0B;&#x5206;&#x53D1;&#x8BA2;&#x9605;&#x4E8B;&#x4EF6;&#xFF0C;schedule&#x65B9;&#x6CD5;&#x4E2D;&#x7684;worker&#xFF0C;&#x5373;&#x4E0A;&#x9762;&#x521B;&#x5EFA;&#x7684;HandlerWorker&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-comment">// ObserveOnObserver.schedule&#x6267;&#x884C;&#x8BA2;&#x9605;&#x4E8B;&#x4EF6;</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">schedule</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">if</span> (getAndIncrement() == <span class="hljs-number">0</span>) {
+        worker.schedule(<span class="hljs-keyword">this</span>);
+    }
+}
+</code></pre>
+<h4 id="handlerworkerschedule"><a name="handlerworkerschedule" class="anchor-navigation-ex-anchor" href="#handlerworkerschedule"><i class="fa fa-link" aria-hidden="true"></i></a>HandlerWorker.schedule</h4>
+<p>HandlerWorker.schedule&#x65B9;&#x6CD5;&#x901A;&#x8FC7;Handler&#x53D1;&#x6D88;&#x606F;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x5C06;Runnable&#x4EFB;&#x52A1;&#x5207;&#x6362;&#x5230;UI&#x7EBF;&#x7A0B;&#x4E2D;&#x6267;&#x884C;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> Disposable <span class="hljs-title">schedule</span><span class="hljs-params">(Runnable run, <span class="hljs-keyword">long</span> delay, TimeUnit unit)</span> </span>{
+        <span class="hljs-comment">// ...</span>
+    ScheduledRunnable scheduled = <span class="hljs-keyword">new</span> ScheduledRunnable(handler, run);
+
+    Message message = Message.obtain(handler, scheduled);
+    message.obj = <span class="hljs-keyword">this</span>; <span class="hljs-comment">// Used as token for batch disposal of this worker&apos;s runnables.</span>
+    handler.sendMessageDelayed(message, unit.toMillis(delay));
+
+    <span class="hljs-comment">// Re-check disposed state for removing in case we were racing a call to dispose().</span>
+    <span class="hljs-keyword">if</span> (disposed) {
+        handler.removeCallbacks(scheduled);
+        <span class="hljs-keyword">return</span> Disposables.disposed();
+    }
+
+    <span class="hljs-keyword">return</span> scheduled;
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="RxJava-Flow.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: RxJava流程分析">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"RxAndroid使用UI线程","level":"1.2.3","depth":2,"next":{"title":"OkHttp","level":"1.3","depth":1,"ref":"","articles":[{"title":"OkHttp网络请求框架","level":"1.3.1","depth":2,"path":"OkHttp/OkHttp.md","ref":"OkHttp/OkHttp.md","articles":[]},{"title":"OkHttp拦截器Interceptor","level":"1.3.2","depth":2,"path":"OkHttp/OkHttp-Interceptor.md","ref":"OkHttp/OkHttp-Interceptor.md","articles":[]}]},"previous":{"title":"RxJava流程分析","level":"1.2.2","depth":2,"path":"RxJava/RxJava-Flow.md","ref":"RxJava/RxJava-Flow.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors","anchor-navigation-ex"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"isShowTocTitleIcon":false,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"heading-anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"a284628487","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Android","language":"zh-hans","output.name":"site","links":{"sidebar":{}},"gitbook":"3.2.3","description":"Android"},"file":{"path":"RxJava/RxJava-RxAndroid.md","mtime":"2019-05-27T06:29:03.174Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-30T00:55:25.071Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
