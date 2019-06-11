@@ -1,0 +1,680 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Scheduler调度器 · Android</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="a284628487">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="RxJava-RxAndroid.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Welcome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    RxJava
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="RxJava-Operator.html">
+            
+                <a href="RxJava-Operator.html">
+            
+                    
+                    RxJava常用操作符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="RxJava-Flow.html">
+            
+                <a href="RxJava-Flow.html">
+            
+                    
+                    RxJava流程分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="RxJava-RxAndroid.html">
+            
+                <a href="RxJava-RxAndroid.html">
+            
+                    
+                    RxAndroid使用UI线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4" data-path="RxJava-Scheduler.html">
+            
+                <a href="RxJava-Scheduler.html">
+            
+                    
+                    Scheduler调度器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    OkHttp
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../OkHttp/OkHttp.html">
+            
+                <a href="../OkHttp/OkHttp.html">
+            
+                    
+                    OkHttp网络请求框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../OkHttp/OkHttp-Interceptor.html">
+            
+                <a href="../OkHttp/OkHttp-Interceptor.html">
+            
+                    
+                    OkHttp拦截器Interceptor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../OkHttp/OkHttp-AddInterceptor.html">
+            
+                <a href="../OkHttp/OkHttp-AddInterceptor.html">
+            
+                    
+                    OkHttp添加Interceptor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Node.Js 基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Node.js/NodeJS-Begin.html">
+            
+                <a href="../Node.js/NodeJS-Begin.html">
+            
+                    
+                    NodeJS 入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Node.js/NodeJS-Common-Module.html">
+            
+                <a href="../Node.js/NodeJS-Common-Module.html">
+            
+                    
+                    NodeJS 基础模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Node.js/NodeJS-Util.html">
+            
+                <a href="../Node.js/NodeJS-Util.html">
+            
+                    
+                    NodeJS Util工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../Node.js/NodeJS-Buffer.html">
+            
+                <a href="../Node.js/NodeJS-Buffer.html">
+            
+                    
+                    NodeJS Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../Node.js/NodeJS-File.html">
+            
+                <a href="../Node.js/NodeJS-File.html">
+            
+                    
+                    NodeJS 文件读写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../Node.js/NodeJS-Stream.html">
+            
+                <a href="../Node.js/NodeJS-Stream.html">
+            
+                    
+                    NodeJS Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../Node.js/NodeJS-Crypto.html">
+            
+                <a href="../Node.js/NodeJS-Crypto.html">
+            
+                    
+                    NodeJS 加密模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../Node.js/NodeJS-EventLoop.html">
+            
+                <a href="../Node.js/NodeJS-EventLoop.html">
+            
+                    
+                    NodeJS 事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../Node.js/NodeJS-Http.html">
+            
+                <a href="../Node.js/NodeJS-Http.html">
+            
+                    
+                    NodeJS Http模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../Node.js/NodeJS-Module-Principle.html">
+            
+                <a href="../Node.js/NodeJS-Module-Principle.html">
+            
+                    
+                    NodeJS 模块原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Node.Js 模块实践
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Node.js/NodeJS-MySQL.html">
+            
+                <a href="../Node.js/NodeJS-MySQL.html">
+            
+                    
+                    NodeJS MySQL数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../Node.js/NodeJS-Express.html">
+            
+                <a href="../Node.js/NodeJS-Express.html">
+            
+                    
+                    NodeJS Express
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../Node.js/NodeJS-Express-Router.html">
+            
+                <a href="../Node.js/NodeJS-Express-Router.html">
+            
+                    
+                    NodeJS Express Router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../Node.js/NodeJS-RESTful-Api.html">
+            
+                <a href="../Node.js/NodeJS-RESTful-Api.html">
+            
+                    
+                    NodeJS RESTful Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../Node.js/NodeJS-Promise-Callback.html">
+            
+                <a href="../Node.js/NodeJS-Promise-Callback.html">
+            
+                    
+                    NodeJS Promise Callback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../Node.js/NodeJS-EventProxy-Async.html">
+            
+                <a href="../Node.js/NodeJS-EventProxy-Async.html">
+            
+                    
+                    NodeJS EventProxy Async
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../Node.js/NodeJS-ejs.html">
+            
+                <a href="../Node.js/NodeJS-ejs.html">
+            
+                    
+                    NodeJS EJS模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../Node.js/NodeJS-Spider.html">
+            
+                <a href="../Node.js/NodeJS-Spider.html">
+            
+                    
+                    NodeJS Cheerio爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../Node.js/NodeJS-Excel.html">
+            
+                <a href="../Node.js/NodeJS-Excel.html">
+            
+                    
+                    NodeJS Excel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../Node.js/NodeJS-Static-File.html">
+            
+                <a href="../Node.js/NodeJS-Static-File.html">
+            
+                    
+                    NodeJS 静态文件服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../Node.js/NodeJS-Test.html">
+            
+                <a href="../Node.js/NodeJS-Test.html">
+            
+                    
+                    NodeJS 测试框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Scheduler调度器</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#rxjava&#x4E2D;&#x7684;scheduler"><b>1. </b>RxJava&#x4E2D;&#x7684;Scheduler</a></li></ul></div><a href="#rxjava&#x4E2D;&#x7684;scheduler" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="rxjava&#x4E2D;&#x7684;scheduler"><a name="rxjava&#x4E2D;&#x7684;scheduler" class="anchor-navigation-ex-anchor" href="#rxjava&#x4E2D;&#x7684;scheduler"><i class="fa fa-link" aria-hidden="true"></i></a>1. RxJava&#x4E2D;&#x7684;Scheduler</h1>
+<p>RxJava&#x4E2D;&#x7684;Scheduler&#x7528;&#x6765;&#x6267;&#x884C;Runnable&#x4EFB;&#x52A1;&#x7684;&#x8C03;&#x5EA6;&#xFF0C;Schedulers&#x7C7B;&#x63D0;&#x4F9B;&#x4E86;&#x51E0;&#x79CD;&#x6807;&#x51C6;&#x7684;Scheduler&#x4EFB;&#x52A1;&#x8C03;&#x5EA6;&#x5668;&#x3002;</p>
+<p>Scheduler&#x4E2D;Runnable&#x4EFB;&#x52A1;&#x7684;&#x6267;&#x884C;&#xFF0C;&#x88AB;&#x5305;&#x88C5;&#x6210;&#x4E86;&#x4E00;&#x4E2A;Worker&#x5BF9;&#x8C61;&#xFF0C;&#x901A;&#x8FC7;createWorker()&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;Worker&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#xFF0C;&#x9700;&#x8981;&#x7531;&#x5B50;&#x7C7B;&#x5B9E;&#x73B0;&#x3002;Worker&#x662F;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x7C7B;&#xFF0C;&#x5B50;&#x7C7B;&#x7EE7;&#x627F;&#x5B83;&#x5E76;&#x5B9E;&#x73B0;&#x5B83;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="RxJava-RxAndroid.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: RxAndroid使用UI线程">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Scheduler调度器","level":"1.2.4","depth":2,"next":{"title":"OkHttp","level":"1.3","depth":1,"ref":"","articles":[{"title":"OkHttp网络请求框架","level":"1.3.1","depth":2,"path":"Sources/OkHttp/OkHttp.md","ref":"Sources/OkHttp/OkHttp.md","articles":[]},{"title":"OkHttp拦截器Interceptor","level":"1.3.2","depth":2,"path":"Sources/OkHttp/OkHttp-Interceptor.md","ref":"Sources/OkHttp/OkHttp-Interceptor.md","articles":[]},{"title":"OkHttp添加Interceptor","level":"1.3.3","depth":2,"path":"Sources/OkHttp/OkHttp-AddInterceptor.md","ref":"Sources/OkHttp/OkHttp-AddInterceptor.md","articles":[]}]},"previous":{"title":"RxAndroid使用UI线程","level":"1.2.3","depth":2,"path":"Sources/RxJava/RxJava-RxAndroid.md","ref":"Sources/RxJava/RxJava-RxAndroid.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors","anchor-navigation-ex"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"isShowTocTitleIcon":false,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"heading-anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"a284628487","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Android","language":"zh-hans","output.name":"site","links":{"sidebar":{}},"gitbook":"3.2.3","description":"Android"},"file":{"path":"Sources/RxJava/RxJava-Scheduler.md","mtime":"2019-06-02T02:09:40.798Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-11T13:44:13.832Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
