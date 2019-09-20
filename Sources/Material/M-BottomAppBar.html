@@ -1,0 +1,1094 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>BottomAppBar · Android</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="a284628487">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="M-BottomNavigationView.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Welcome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Starbucks
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Program/FLAG_ACTIVITY_NEW_TASK.html">
+            
+                <a href="../Program/FLAG_ACTIVITY_NEW_TASK.html">
+            
+                    
+                    FLAG_ACTIVITY_NEW_TASK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Program/Launch-Optimize.html">
+            
+                <a href="../Program/Launch-Optimize.html">
+            
+                    
+                    App启动时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Program/Starbucks-Launch-Opt.html">
+            
+                <a href="../Program/Starbucks-Launch-Opt.html">
+            
+                    
+                    Starbucks启动优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    RxJava
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../RxJava/RxJava-Operator.html">
+            
+                <a href="../RxJava/RxJava-Operator.html">
+            
+                    
+                    RxJava常用操作符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../RxJava/RxJava-Flow.html">
+            
+                <a href="../RxJava/RxJava-Flow.html">
+            
+                    
+                    RxJava流程分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../RxJava/RxJava-RxAndroid.html">
+            
+                <a href="../RxJava/RxJava-RxAndroid.html">
+            
+                    
+                    RxAndroid使用UI线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../RxJava/RxJava-Scheduler.html">
+            
+                <a href="../RxJava/RxJava-Scheduler.html">
+            
+                    
+                    Scheduler任务调度器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../RxJava/RxJava-IoScheduler.html">
+            
+                <a href="../RxJava/RxJava-IoScheduler.html">
+            
+                    
+                    IoScheduler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../RxJava/Scheduler-Practice.html">
+            
+                <a href="../RxJava/Scheduler-Practice.html">
+            
+                    
+                    IoScheduler实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    OkHttp
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../OkHttp/OkHttp.html">
+            
+                <a href="../OkHttp/OkHttp.html">
+            
+                    
+                    OkHttp网络请求框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../OkHttp/OkHttp-Interceptor.html">
+            
+                <a href="../OkHttp/OkHttp-Interceptor.html">
+            
+                    
+                    OkHttp拦截器Interceptor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../OkHttp/OkHttp-AddInterceptor.html">
+            
+                <a href="../OkHttp/OkHttp-AddInterceptor.html">
+            
+                    
+                    OkHttp添加Interceptor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Material
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1" data-path="M-BottomAppBar.html">
+            
+                <a href="M-BottomAppBar.html">
+            
+                    
+                    BottomAppBar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="M-BottomNavigationView.html">
+            
+                <a href="M-BottomNavigationView.html">
+            
+                    
+                    BottomNavigationView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="M-Toolbar.html">
+            
+                <a href="M-Toolbar.html">
+            
+                    
+                    Toolbar
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Jetpack
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Jetpack/Lifecycle-ViewModel.html">
+            
+                <a href="../Jetpack/Lifecycle-ViewModel.html">
+            
+                    
+                    ViewModel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Jetpack/Lifecycle-Lifecycle.html">
+            
+                <a href="../Jetpack/Lifecycle-Lifecycle.html">
+            
+                    
+                    Handing Lifecycles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Jetpack/Lifecycle-LiveData.html">
+            
+                <a href="../Jetpack/Lifecycle-LiveData.html">
+            
+                    
+                    LiveData
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Android Crash
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Program/Crash-finalize.html">
+            
+                <a href="../Program/Crash-finalize.html">
+            
+                    
+                    finalize timeout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Program/Crash-JobIntentService.html">
+            
+                <a href="../Program/Crash-JobIntentService.html">
+            
+                    
+                    JobIntentService timeout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Program/Crash-WorkManager.html">
+            
+                <a href="../Program/Crash-WorkManager.html">
+            
+                    
+                    WorkManager initialize
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Util
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../Util/git-svn.html">
+            
+                <a href="../Util/git-svn.html">
+            
+                    
+                    Git/SVN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../Util/adb.html">
+            
+                <a href="../Util/adb.html">
+            
+                    
+                    Android ADB命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Node.Js 基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../Node.js/NodeJS-Begin.html">
+            
+                <a href="../Node.js/NodeJS-Begin.html">
+            
+                    
+                    NodeJS 入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../Node.js/NodeJS-Common-Module.html">
+            
+                <a href="../Node.js/NodeJS-Common-Module.html">
+            
+                    
+                    NodeJS 基础模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../Node.js/NodeJS-Util.html">
+            
+                <a href="../Node.js/NodeJS-Util.html">
+            
+                    
+                    NodeJS Util工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../Node.js/NodeJS-Buffer.html">
+            
+                <a href="../Node.js/NodeJS-Buffer.html">
+            
+                    
+                    NodeJS Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../Node.js/NodeJS-File.html">
+            
+                <a href="../Node.js/NodeJS-File.html">
+            
+                    
+                    NodeJS 文件读写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../Node.js/NodeJS-Stream.html">
+            
+                <a href="../Node.js/NodeJS-Stream.html">
+            
+                    
+                    NodeJS Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../Node.js/NodeJS-Crypto.html">
+            
+                <a href="../Node.js/NodeJS-Crypto.html">
+            
+                    
+                    NodeJS 加密模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../Node.js/NodeJS-EventLoop.html">
+            
+                <a href="../Node.js/NodeJS-EventLoop.html">
+            
+                    
+                    NodeJS 事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../Node.js/NodeJS-Http.html">
+            
+                <a href="../Node.js/NodeJS-Http.html">
+            
+                    
+                    NodeJS Http模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="../Node.js/NodeJS-Module-Principle.html">
+            
+                <a href="../Node.js/NodeJS-Module-Principle.html">
+            
+                    
+                    NodeJS 模块原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Node.Js 模块实践
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Node.js/NodeJS-MySQL.html">
+            
+                <a href="../Node.js/NodeJS-MySQL.html">
+            
+                    
+                    NodeJS MySQL数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Node.js/NodeJS-Express.html">
+            
+                <a href="../Node.js/NodeJS-Express.html">
+            
+                    
+                    NodeJS Express
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../Node.js/NodeJS-Express-Router.html">
+            
+                <a href="../Node.js/NodeJS-Express-Router.html">
+            
+                    
+                    NodeJS Express Router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../Node.js/NodeJS-RESTful-Api.html">
+            
+                <a href="../Node.js/NodeJS-RESTful-Api.html">
+            
+                    
+                    NodeJS RESTful Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../Node.js/NodeJS-Promise-Callback.html">
+            
+                <a href="../Node.js/NodeJS-Promise-Callback.html">
+            
+                    
+                    NodeJS Promise Callback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../Node.js/NodeJS-EventProxy-Async.html">
+            
+                <a href="../Node.js/NodeJS-EventProxy-Async.html">
+            
+                    
+                    NodeJS EventProxy Async
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../Node.js/NodeJS-ejs.html">
+            
+                <a href="../Node.js/NodeJS-ejs.html">
+            
+                    
+                    NodeJS EJS模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../Node.js/NodeJS-Spider.html">
+            
+                <a href="../Node.js/NodeJS-Spider.html">
+            
+                    
+                    NodeJS Cheerio爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../Node.js/NodeJS-Excel.html">
+            
+                <a href="../Node.js/NodeJS-Excel.html">
+            
+                    
+                    NodeJS Excel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="../Node.js/NodeJS-Static-File.html">
+            
+                <a href="../Node.js/NodeJS-Static-File.html">
+            
+                    
+                    NodeJS 静态文件服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="../Node.js/NodeJS-Test.html">
+            
+                <a href="../Node.js/NodeJS-Test.html">
+            
+                    
+                    NodeJS 测试框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >BottomAppBar</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#bottom-appbar"><b>1. </b>Bottom AppBar</a></li><ul><li><span class="title-icon "></span><a href="#usage"><b>1.1. </b>Usage</a></li><ul><li><span class="title-icon "></span><a href="#material-styles"><b>1.1.1. </b>Material Styles</a></li><li><span class="title-icon "></span><a href="#bottomappbar-attributes"><b>1.1.2. </b>BottomAppBar Attributes</a></li><li><span class="title-icon "></span><a href="#handling-menu-options"><b>1.1.3. </b>Handling Menu Options</a></li><li><span class="title-icon "></span><a href="#handling-navigation-item-click"><b>1.1.4. </b>Handling Navigation Item Click</a></li></ul></ul></ul></div><a href="#bottom-appbar" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="bottom-appbar"><a name="bottom-appbar" class="anchor-navigation-ex-anchor" href="#bottom-appbar"><i class="fa fa-link" aria-hidden="true"></i></a>1. Bottom AppBar</h1>
+<h2 id="usage"><a name="usage" class="anchor-navigation-ex-anchor" href="#usage"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Usage</h2>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">androidx.coordinatorlayout.widget.CoordinatorLayout</span>
+    <span class="hljs-attr">xmlns:android</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="hljs-attr">xmlns:app</span>=<span class="hljs-string">&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+    <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;match_parent&quot;</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- Other components and views --&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">com.google.android.material.bottomappbar.BottomAppBar</span>
+      <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/bar&quot;</span>
+      <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;match_parent&quot;</span>
+      <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+      <span class="hljs-attr">android:layout_gravity</span>=<span class="hljs-string">&quot;bottom&quot;</span>
+      <span class="hljs-attr">app:navigationIcon</span>=<span class="hljs-string">&quot;@drawable/ic_menu_24&quot;</span>/&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">com.google.android.material.floatingactionbutton.FloatingActionButton</span>
+      <span class="hljs-attr">android:id</span>=<span class="hljs-string">&quot;@+id/fab&quot;</span>
+      <span class="hljs-attr">android:layout_width</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+      <span class="hljs-attr">android:layout_height</span>=<span class="hljs-string">&quot;wrap_content&quot;</span>
+      <span class="hljs-attr">app:layout_anchor</span>=<span class="hljs-string">&quot;@id/bar&quot;</span>/&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">androidx.coordinatorlayout.widget.CoordinatorLayout</span>&gt;</span>
+</code></pre>
+<p> <code>FloatingActionButton</code> &#x53EF;&#x4EE5;&#x4F9D;&#x9644;&#x5230;&#x4E00;&#x4E2A; <code>BottomAppBar</code> &#x4E0A;&#xFF0C;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;&#x5C5E;&#x6027; <code>app:layout_anchor</code> &#x6307;&#x5411;<code>BottomAppBar</code>&#x6216;&#x8005;&#x901A;&#x8FC7;&#x8C03;&#x7528; <code>CoordinatorLayout.LayoutParams#setAnchorId(int)</code>&#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
+<h3 id="material-styles"><a name="material-styles" class="anchor-navigation-ex-anchor" href="#material-styles"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. Material Styles</h3>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;<code>BottomAppBar</code>&#x5C06;&#x4F7F;&#x7528;&#x66F4;&#x65B0;&#x7684;&#x4E3B;&#x9898;<code>Theme.MaterialComponents</code>&#x6765;&#x63D0;&#x4F9B;Material&#x98CE;&#x683C;&#x7684;&#x8BBE;&#x8BA1;&#x3002;&#x5982;&#x679C;&#x4F60;&#x7684;Application Theme&#x6CA1;&#x6709;&#x7EE7;&#x627F;&#x81EA;Material Theme&#xFF0C;&#x53EF;&#x4EE5;&#x5728;xml&#x4E2D;&#x6307;&#x5B9A;<code>BottomAppBar</code>&#x7684;style&#x3002;</p>
+<pre><code class="lang-xml">style=&quot;@style/Widget.MaterialComponents.BottomAppBar&quot;
+</code></pre>
+<h3 id="bottomappbar-attributes"><a name="bottomappbar-attributes" class="anchor-navigation-ex-anchor" href="#bottomappbar-attributes"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. BottomAppBar Attributes</h3>
+<p>FloatingActionButton&#x5C5E;&#x6027;&#x8BBE;&#x7F6E;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Feature</th>
+<th style="text-align:left">Relevant attributes</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Background Tint</td>
+<td style="text-align:left"><code>app:backgroundTint</code></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">FAB Alignment Mode</td>
+<td style="text-align:left"><code>app:fabAlignmentMode</code></td>
+<td>Fab&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;</td>
+</tr>
+<tr>
+<td style="text-align:left">FAB Cradle Margin</td>
+<td style="text-align:left"><code>app:fabCradleMargin</code></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">FAB Cradle Corner Radius</td>
+<td style="text-align:left"><code>app:fabCradleRoundedCornerRadius</code></td>
+<td>AppBar&#x5706;&#x89D2;&#x95F4;&#x8DDD;</td>
+</tr>
+<tr>
+<td style="text-align:left">FAB Vertical Offset</td>
+<td style="text-align:left"><code>app:fabCradleVerticalOffset</code></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">Hide on scroll</td>
+<td style="text-align:left"><code>app:hideOnScroll</code></td>
+<td>&#x6EDA;&#x52A8;&#x65F6;&#x9690;&#x85CF;AppBar</td>
+</tr>
+</tbody>
+</table>
+<h4 id="background-tint"><a name="background-tint" class="anchor-navigation-ex-anchor" href="#background-tint"><i class="fa fa-link" aria-hidden="true"></i></a>Background Tint</h4>
+<p>&#x8BBE;&#x7F6E;<code>BottomAppBar</code> &#x7684;background.  the <code>app:backgroundTint</code> attribute will allow you to set a tint.</p>
+<h4 id="floatingactionbutton-alignment-modes"><a name="floatingactionbutton-alignment-modes" class="anchor-navigation-ex-anchor" href="#floatingactionbutton-alignment-modes"><i class="fa fa-link" aria-hidden="true"></i></a><code>FloatingActionButton</code> Alignment Modes</h4>
+<p><code>FloatingActionButton</code> &#x53EF;&#x4EE5;&#x5BF9;&#x9F50;&#x5230;&#x4E2D;&#x95F4; (<code>FAB_ALIGNMENT_MODE_CENTER</code>) &#x6216;&#x8005;&#x5C3E;&#x90E8; (<code>FAB_ALIGNMENT_MODE_END</code>) &#x901A;&#x8FC7;&#x8C03;&#x7528; <code>setFabAlignmentMode(int)</code>.</p>
+<h4 id="floatingactionbutton-attributes"><a name="floatingactionbutton-attributes" class="anchor-navigation-ex-anchor" href="#floatingactionbutton-attributes"><i class="fa fa-link" aria-hidden="true"></i></a><code>FloatingActionButton</code> Attributes</h4>
+<p> <code>FloatingActionButton</code> &#x6309;&#x94AE;&#x7684;&#x8868;&#x73B0;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>fabAlignmentMode</code>, <code>fabCradleMargin</code>, <code>fabCradleRoundedCornerRadius</code>, &#x548C; <code>fabCradleVerticalOffset</code>&#x6765;&#x63A7;&#x5236;.  </p>
+<ul>
+<li><code>fabAlignmentMode</code> &#x7528;&#x6765;&#x8BBE;&#x7F6E;&#x5BF9;&#x9F50;&#x5230; <code>center</code> &#x6216;&#x8005; <code>end</code>. </li>
+<li><code>fabCradleMargin</code> &#x7528;&#x6765;&#x8BBE;&#x7F6E;<code>FloatingActionButton</code> &#x548C;<code>BottomAppBar</code>&#x7684;&#x95F4;&#x8DDD;.</li>
+<li><code>fabCradleRoundedCornerRadius</code>&#x7528;&#x6765;&#x6307;&#x5B9A;&#x5706;&#x89D2;&#x89D2;&#x5EA6;.</li>
+<li><code>fabCradleVerticalOffset</code> &#x6307;&#x5B9A;<code>FloatingActionButton</code> &#x548C; <code>BottomAppBar</code>&#x7684;&#x5782;&#x76F4;&#x95F4;&#x8DDD;.&#x5982;&#x679C;&#x503C;&#x4E3A;0,  <code>FloatingActionButton</code> &#x7684;&#x4E2D;&#x95F4;&#x7EBF;&#x5C06;&#x5BF9;&#x9F50; <code>BottomAppBar</code>&#x7684;&#x9876;&#x90E8;.</li>
+</ul>
+<h4 id="hide-on-scroll"><a name="hide-on-scroll" class="anchor-navigation-ex-anchor" href="#hide-on-scroll"><i class="fa fa-link" aria-hidden="true"></i></a>Hide on scroll</h4>
+<p><code>BottomAppBar</code> &#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x6210;&#x9875;&#x9762;&#x6EDA;&#x52A8;&#x65F6;&#x81EA;&#x52A8;&#x9690;&#x85CF;&#xFF0C;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E; <code>hideOnScroll</code> &#x5C5E;&#x6027;. &#x8981;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;,&#x9700;&#x8981;&#x5C06;&#x6EDA;&#x52A8;&#x5185;&#x5BB9;&#x5305;&#x88F9;&#x5728; <code>NestedScrollView</code>&#x4E2D;. &#x5728;&#x8FD9;&#x91CC;&#x4E0D;&#x9700;&#x8981;&#x5C06; <code>BottomAppBar</code> &#x5305;&#x88F9;&#x5728; <code>AppBarLayout</code>&#x4E2D;&#x6216;&#x8005;&#x4F7F;&#x7528;<code>AppBarLayout</code>&#x7684;scroll flags&#x6BD4;&#x5982;<code>app:layout_scrollFlags</code>.</p>
+<h3 id="handling-menu-options"><a name="handling-menu-options" class="anchor-navigation-ex-anchor" href="#handling-menu-options"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.3. Handling Menu Options</h3>
+<p>&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x6765;&#x5904;&#x7406;&#x83DC;&#x5355;&#x4E8B;&#x4EF6;&#xFF0C;&#x5176;&#x4E00;&#x662F;&#x901A;&#x8FC7;<code>setOnMenuItemClickListener(OnMenuItemClickListener)</code> </p>
+<pre><code class="lang-java">BottomAppBar bar = (BottomAppBar) findViewById(R.id.bar);
+
+bar.setOnMenuItemClickListener(<span class="hljs-keyword">new</span> OnMenuItemClickListener() {
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">onMenuItemClick</span><span class="hljs-params">(MenuItem item)</span> </span>{
+        <span class="hljs-comment">// Handle actions based on the menu item</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+    }
+});
+</code></pre>
+<p>&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x662F;&#x8C03;&#x7528; <code>setSupportActionBar()</code> ,&#x8FD9;&#x6837;&#x5C06;&#x4F1A;&#x8BBE;&#x7F6E;menu&#x7684;callback&#xFF0C;&#x5982;&#x540C;Toolbar&#x4E00;&#x6837;&#x5C06;&#x5173;&#x8054;&#x5230; <code>Activity#onCreateOptionsMenu()</code> &#x548C; <code>Activity#onOptionsItemSelected()</code>&#x65B9;&#x6CD5;. </p>
+<pre><code class="lang-java">BottomAppBar bar = (BottomAppBar) findViewById(R.id.bar);
+setSupportActionBar(bar);
+</code></pre>
+<h3 id="handling-navigation-item-click"><a name="handling-navigation-item-click" class="anchor-navigation-ex-anchor" href="#handling-navigation-item-click"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.4. Handling Navigation Item Click</h3>
+<p>&#x5982;&#x679C;&#x662F;&#x4F7F;&#x7528; <code>setSupportActionBar()</code>&#x6765;&#x8BBE;&#x7F6E; <code>BottomAppBar</code> ,&#x53EF;&#x4EE5;&#x5904;&#x7406;menuItem&#x7684;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;,&#x5224;&#x65AD;menuItem&#x7684;id&#x662F;&#x5426;&#x662F; <code>android.R.id.home</code>. &#x53E6;&#x5916;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x662F;&#x901A;&#x8FC7;<code>setNavigationOnClickListener(OnClickListener)</code>:</p>
+<pre><code class="lang-java">BottomAppBar bar = (BottomAppBar) findViewById(R.id.bar);
+bar.setNavigationOnClickListener(<span class="hljs-keyword">new</span> OnClickListener() {
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onClick</span><span class="hljs-params">(View v)</span> </span>{
+        <span class="hljs-comment">// Handle the navigation click by showing a BottomDrawer etc.</span>
+    }
+});
+</code></pre>
+<p><a href="https://material.io/develop/android/components/bottom-app-bar/" target="_blank">BottomAppBar</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="M-BottomNavigationView.html" class="navigation navigation-next navigation-unique" aria-label="Next page: BottomNavigationView">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"BottomAppBar","level":"1.5.1","depth":2,"next":{"title":"BottomNavigationView","level":"1.5.2","depth":2,"path":"Sources/Material/M-BottomNavigationView.md","ref":"Sources/Material/M-BottomNavigationView.md","articles":[]},"previous":{"title":"Material","level":"1.5","depth":1,"ref":"","articles":[{"title":"BottomAppBar","level":"1.5.1","depth":2,"path":"Sources/Material/M-BottomAppBar.md","ref":"Sources/Material/M-BottomAppBar.md","articles":[]},{"title":"BottomNavigationView","level":"1.5.2","depth":2,"path":"Sources/Material/M-BottomNavigationView.md","ref":"Sources/Material/M-BottomNavigationView.md","articles":[]},{"title":"Toolbar","level":"1.5.3","depth":2,"path":"Sources/Material/M-Toolbar.md","ref":"Sources/Material/M-Toolbar.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["heading-anchors","anchor-navigation-ex"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"isShowTocTitleIcon":false,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"heading-anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"a284628487","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Android","language":"zh-hans","output.name":"site","links":{"sidebar":{}},"gitbook":"3.2.3","description":"Android"},"file":{"path":"Sources/Material/M-BottomAppBar.md","mtime":"2019-08-31T10:41:32.609Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-20T14:26:05.778Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

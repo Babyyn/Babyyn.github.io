@@ -1,0 +1,6 @@
+AndroidX是一个开源项目，Android团队使用它来开发、测试、打包、版本和发布Jetpack中的库。
+
+Androidx是对原始Android支持库的重大改进。与支持库一样，Androidx与Android操作系统分开发布，并在Android版本之间提供向后兼容性。androidx通过提供特性奇偶校验和新的库完全取代了支持库。此外，Androidx还包括以下功能：
+
+Androidx中的所有包都位于一个一致的以字符串androidx开始的包中。支持库包已映射到相应的Androidx.*包中。有关所有旧类的完整映射和新类的构建工件，请参阅包重构页。
+
