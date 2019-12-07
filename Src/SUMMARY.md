@@ -2,11 +2,6 @@
 
 * [Welcome](README.md)
 
-- Starbucks
-  * [FLAG_ACTIVITY_NEW_TASK](Sources/Program/FLAG_ACTIVITY_NEW_TASK.md)
-  * [App启动时间](Sources/Program/Launch-Optimize.md)
-  * [Starbucks启动优化](Sources/Program/Starbucks-Launch-Opt.md)
-
 - RxJava
   * [RxJava常用操作符](Sources/RxJava/RxJava-Operator.md)
   * [RxJava流程分析](Sources/RxJava/RxJava-Flow.md)
@@ -34,10 +29,20 @@
   - [finalize timeout](Sources/Program/Crash-finalize.md)
   - [JobIntentService timeout](Sources/Program/Crash-JobIntentService.md)
   - [WorkManager initialize](Sources/Program/Crash-WorkManager.md)
+  - [资源文件适配](Sources/Program/Crash-res.md)
 
 - Util
   - [Git/SVN](Sources/Util/git-svn.md)
   - [Android ADB命令](Sources/Util/adb.md)
+  - [代码检查工具](Sources/Util/Code-check.md)
+
+- Starbucks
+  * [FLAG_ACTIVITY_NEW_TASK](Sources/Program/FLAG_ACTIVITY_NEW_TASK.md)
+  * [App启动时间](Sources/Program/Launch-Optimize.md)
+
+- AOSP
+  * [AOSP源码下载及编译](Sources/AOSP/build.md)
+  * [AOSP添加系统服务](Sources/AOSP/add_systemservice.md)
 
 - Node.Js 基础
   - [NodeJS 入门](Sources/Node.js/NodeJS-Begin.md)
