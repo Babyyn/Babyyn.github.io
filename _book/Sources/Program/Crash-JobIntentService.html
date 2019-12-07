@@ -1,0 +1,1217 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>JobIntentService timeout · Android</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="a284628487">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Crash-WorkManager.html" />
+    
+    
+    <link rel="prev" href="Crash-finalize.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Welcome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    RxJava
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../RxJava/RxJava-Operator.html">
+            
+                <a href="../RxJava/RxJava-Operator.html">
+            
+                    
+                    RxJava常用操作符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../RxJava/RxJava-Flow.html">
+            
+                <a href="../RxJava/RxJava-Flow.html">
+            
+                    
+                    RxJava流程分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../RxJava/RxJava-RxAndroid.html">
+            
+                <a href="../RxJava/RxJava-RxAndroid.html">
+            
+                    
+                    RxAndroid使用UI线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../RxJava/RxJava-Scheduler.html">
+            
+                <a href="../RxJava/RxJava-Scheduler.html">
+            
+                    
+                    Scheduler任务调度器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../RxJava/RxJava-IoScheduler.html">
+            
+                <a href="../RxJava/RxJava-IoScheduler.html">
+            
+                    
+                    IoScheduler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../RxJava/Scheduler-Practice.html">
+            
+                <a href="../RxJava/Scheduler-Practice.html">
+            
+                    
+                    IoScheduler实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    OkHttp
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../OkHttp/OkHttp.html">
+            
+                <a href="../OkHttp/OkHttp.html">
+            
+                    
+                    OkHttp网络请求框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../OkHttp/OkHttp-Interceptor.html">
+            
+                <a href="../OkHttp/OkHttp-Interceptor.html">
+            
+                    
+                    OkHttp拦截器Interceptor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../OkHttp/OkHttp-AddInterceptor.html">
+            
+                <a href="../OkHttp/OkHttp-AddInterceptor.html">
+            
+                    
+                    OkHttp添加Interceptor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Material
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Material/M-BottomAppBar.html">
+            
+                <a href="../Material/M-BottomAppBar.html">
+            
+                    
+                    BottomAppBar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Material/M-BottomNavigationView.html">
+            
+                <a href="../Material/M-BottomNavigationView.html">
+            
+                    
+                    BottomNavigationView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Material/M-Toolbar.html">
+            
+                <a href="../Material/M-Toolbar.html">
+            
+                    
+                    Toolbar
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Jetpack
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Jetpack/Lifecycle-ViewModel.html">
+            
+                <a href="../Jetpack/Lifecycle-ViewModel.html">
+            
+                    
+                    ViewModel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../Jetpack/Lifecycle-Lifecycle.html">
+            
+                <a href="../Jetpack/Lifecycle-Lifecycle.html">
+            
+                    
+                    Handing Lifecycles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../Jetpack/Lifecycle-LiveData.html">
+            
+                <a href="../Jetpack/Lifecycle-LiveData.html">
+            
+                    
+                    LiveData
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Android Crash
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Crash-finalize.html">
+            
+                <a href="Crash-finalize.html">
+            
+                    
+                    finalize timeout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.2" data-path="Crash-JobIntentService.html">
+            
+                <a href="Crash-JobIntentService.html">
+            
+                    
+                    JobIntentService timeout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="Crash-WorkManager.html">
+            
+                <a href="Crash-WorkManager.html">
+            
+                    
+                    WorkManager initialize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="Crash-res.html">
+            
+                <a href="Crash-res.html">
+            
+                    
+                    资源文件适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Util
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Util/git-svn.html">
+            
+                <a href="../Util/git-svn.html">
+            
+                    
+                    Git/SVN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Util/adb.html">
+            
+                <a href="../Util/adb.html">
+            
+                    
+                    Android ADB命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Util/Code-check.html">
+            
+                <a href="../Util/Code-check.html">
+            
+                    
+                    代码检查工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Starbucks
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="FLAG_ACTIVITY_NEW_TASK.html">
+            
+                <a href="FLAG_ACTIVITY_NEW_TASK.html">
+            
+                    
+                    FLAG_ACTIVITY_NEW_TASK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="Launch-Optimize.html">
+            
+                <a href="Launch-Optimize.html">
+            
+                    
+                    App启动时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    AOSP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../AOSP/build.html">
+            
+                <a href="../AOSP/build.html">
+            
+                    
+                    AOSP源码下载及编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../AOSP/add_systemservice.html">
+            
+                <a href="../AOSP/add_systemservice.html">
+            
+                    
+                    AOSP添加系统服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Node.Js 基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Node.js/NodeJS-Begin.html">
+            
+                <a href="../Node.js/NodeJS-Begin.html">
+            
+                    
+                    NodeJS 入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Node.js/NodeJS-Common-Module.html">
+            
+                <a href="../Node.js/NodeJS-Common-Module.html">
+            
+                    
+                    NodeJS 基础模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../Node.js/NodeJS-Util.html">
+            
+                <a href="../Node.js/NodeJS-Util.html">
+            
+                    
+                    NodeJS Util工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../Node.js/NodeJS-Buffer.html">
+            
+                <a href="../Node.js/NodeJS-Buffer.html">
+            
+                    
+                    NodeJS Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../Node.js/NodeJS-File.html">
+            
+                <a href="../Node.js/NodeJS-File.html">
+            
+                    
+                    NodeJS 文件读写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../Node.js/NodeJS-Stream.html">
+            
+                <a href="../Node.js/NodeJS-Stream.html">
+            
+                    
+                    NodeJS Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../Node.js/NodeJS-Crypto.html">
+            
+                <a href="../Node.js/NodeJS-Crypto.html">
+            
+                    
+                    NodeJS 加密模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../Node.js/NodeJS-EventLoop.html">
+            
+                <a href="../Node.js/NodeJS-EventLoop.html">
+            
+                    
+                    NodeJS 事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../Node.js/NodeJS-Http.html">
+            
+                <a href="../Node.js/NodeJS-Http.html">
+            
+                    
+                    NodeJS Http模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="../Node.js/NodeJS-Module-Principle.html">
+            
+                <a href="../Node.js/NodeJS-Module-Principle.html">
+            
+                    
+                    NodeJS 模块原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Node.Js 模块实践
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../Node.js/NodeJS-MySQL.html">
+            
+                <a href="../Node.js/NodeJS-MySQL.html">
+            
+                    
+                    NodeJS MySQL数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../Node.js/NodeJS-Express.html">
+            
+                <a href="../Node.js/NodeJS-Express.html">
+            
+                    
+                    NodeJS Express
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../Node.js/NodeJS-Express-Router.html">
+            
+                <a href="../Node.js/NodeJS-Express-Router.html">
+            
+                    
+                    NodeJS Express Router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../Node.js/NodeJS-RESTful-Api.html">
+            
+                <a href="../Node.js/NodeJS-RESTful-Api.html">
+            
+                    
+                    NodeJS RESTful Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../Node.js/NodeJS-Promise-Callback.html">
+            
+                <a href="../Node.js/NodeJS-Promise-Callback.html">
+            
+                    
+                    NodeJS Promise Callback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../Node.js/NodeJS-EventProxy-Async.html">
+            
+                <a href="../Node.js/NodeJS-EventProxy-Async.html">
+            
+                    
+                    NodeJS EventProxy Async
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../Node.js/NodeJS-ejs.html">
+            
+                <a href="../Node.js/NodeJS-ejs.html">
+            
+                    
+                    NodeJS EJS模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../Node.js/NodeJS-Spider.html">
+            
+                <a href="../Node.js/NodeJS-Spider.html">
+            
+                    
+                    NodeJS Cheerio爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="../Node.js/NodeJS-Excel.html">
+            
+                <a href="../Node.js/NodeJS-Excel.html">
+            
+                    
+                    NodeJS Excel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.10" data-path="../Node.js/NodeJS-Static-File.html">
+            
+                <a href="../Node.js/NodeJS-Static-File.html">
+            
+                    
+                    NodeJS 静态文件服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.11" data-path="../Node.js/NodeJS-Test.html">
+            
+                <a href="../Node.js/NodeJS-Test.html">
+            
+                    
+                    NodeJS 测试框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >JobIntentService timeout</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#jobintentservice-crash-fix"><b>1. </b>JobIntentService crash fix</a></li><ul><ul><li><span class="title-icon "></span><a href="#safejobintentservice"><b>1.1.1. </b>SafeJobIntentService</a></li><li><span class="title-icon "></span><a href="#safejobserviceengineimpl"><b>1.1.2. </b>SafeJobServiceEngineImpl</a></li></ul></ul></ul></div><a href="#jobintentservice-crash-fix" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="jobintentservice-crash-fix"><a name="jobintentservice-crash-fix" class="anchor-navigation-ex-anchor" href="#jobintentservice-crash-fix"><i class="fa fa-link" aria-hidden="true"></i></a>1. JobIntentService crash fix</h1>
+<p>&#x4F7F;&#x7528;<strong>JobIntentService</strong>&#x6267;&#x884C;&#x5F02;&#x5E38;&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x9047;&#x5230;&#x4E00;&#x4E2A;crash&#xFF1A;<code>Caller no longer running, last stopped +25s437ms because: timed out while starting</code>&#x3002;</p>
+<pre><code class="lang-shell">Fatal Exception: java.lang.RuntimeException: An error occurred while executing doInBackground()
+       at android.os.AsyncTask$3.done(AsyncTask.java:353)
+       at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:383)
+       at java.util.concurrent.FutureTask.setException(FutureTask.java:252)
+       at java.util.concurrent.FutureTask.run(FutureTask.java:271)
+       at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
+       at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+       at java.lang.Thread.run(Thread.java:764)
+Caused by java.lang.SecurityException: Caller no longer running, last stopped +25s437ms because: timed out while starting
+       at android.os.Parcel.readException(Parcel.java:1942)
+       at android.os.Parcel.readException(Parcel.java:1888)
+       at android.app.job.IJobCallback$Stub$Proxy.dequeueWork(IJobCallback.java:191)
+       at android.app.job.JobParameters.dequeueWork(JobParameters.java:196)
+       at android.support.v4.app.JobIntentService$JobServiceEngineImpl.dequeueWork(JobIntentService.java:309)
+       at android.support.v4.app.JobIntentService.dequeueWork(JobIntentService.java:627)
+       at android.support.v4.app.JobIntentService$CommandProcessor.doInBackground(JobIntentService.java:384)
+       at android.support.v4.app.JobIntentService$CommandProcessor.doInBackground(JobIntentService.java:377)
+       at android.os.AsyncTask$2.call(AsyncTask.java:333)
+       at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+       at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
+       at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+       at java.lang.Thread.run(Thread.java:764)
+</code></pre>
+<blockquote>
+<p>99% of our crashes are happening on Android O, with a large number of those users on Samsung devices</p>
+</blockquote>
+<p>&#x5728;Github&#x4E0A;&#x6709;&#x540C;&#x6837;&#x7684;issues&#x53CA;&#x89E3;&#x51B3;&#x529E;&#x6CD5;&#xFF1A;</p>
+<h3 id="safejobintentservice"><a name="safejobintentservice" class="anchor-navigation-ex-anchor" href="#safejobintentservice"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. SafeJobIntentService</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> android.support.v4.app;
+
+<span class="hljs-keyword">import</span> android.os.Build;
+<span class="hljs-keyword">import</span> android.support.annotation.RestrictTo;
+
+<span class="hljs-comment">/**
+ */</span>
+<span class="hljs-meta">@RestrictTo</span>(RestrictTo.Scope.LIBRARY)
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SafeJobIntentService</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">JobIntentService</span> </span>{
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function">GenericWorkItem <span class="hljs-title">dequeueWork</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">super</span>.dequeueWork();
+        } <span class="hljs-keyword">catch</span> (SecurityException e) {
+            e.printStackTrace();
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        }
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">super</span>.onCreate();
+        <span class="hljs-comment">// override mJobImpl with safe class to ignore SecurityException</span>
+        <span class="hljs-keyword">if</span> (Build.VERSION.SDK_INT &gt;= <span class="hljs-number">26</span>) { <span class="hljs-comment">// &#x5982;&#x679C;Android&#x7248;&#x672C;&#x5927;&#x4E8E;&#x7B49;&#x4E8E;O&#x7248;&#x672C;</span>
+            mJobImpl = <span class="hljs-keyword">new</span> SafeJobServiceEngineImpl(<span class="hljs-keyword">this</span>);
+        } <span class="hljs-keyword">else</span> {
+            mJobImpl = <span class="hljs-keyword">null</span>;
+        }
+    }
+}
+</code></pre>
+<h3 id="safejobserviceengineimpl"><a name="safejobserviceengineimpl" class="anchor-navigation-ex-anchor" href="#safejobserviceengineimpl"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. SafeJobServiceEngineImpl</h3>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> android.support.v4.app;
+
+<span class="hljs-keyword">import</span> android.app.job.JobParameters;
+<span class="hljs-keyword">import</span> android.app.job.JobServiceEngine;
+<span class="hljs-keyword">import</span> android.app.job.JobWorkItem;
+<span class="hljs-keyword">import</span> android.content.Intent;
+<span class="hljs-keyword">import</span> android.os.IBinder;
+<span class="hljs-keyword">import</span> android.support.annotation.RequiresApi;
+<span class="hljs-keyword">import</span> android.util.Log;
+
+<span class="hljs-comment">/**
+ * Implementation of a JobServiceEngine for interaction with JobIntentService.
+ */</span>
+<span class="hljs-meta">@RequiresApi</span>(<span class="hljs-number">26</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SafeJobServiceEngineImpl</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">JobServiceEngine</span>
+        <span class="hljs-keyword">implements</span> <span class="hljs-title">JobIntentService</span>.<span class="hljs-title">CompatJobEngine</span> </span>{
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String TAG = <span class="hljs-string">&quot;JobServiceEngineImpl&quot;</span>;
+
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">boolean</span> DEBUG = <span class="hljs-keyword">false</span>;
+
+    <span class="hljs-keyword">final</span> JobIntentService mService;
+    <span class="hljs-keyword">final</span> Object mLock = <span class="hljs-keyword">new</span> Object();
+    JobParameters mParams;
+
+    <span class="hljs-keyword">final</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WrapperWorkItem</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">JobIntentService</span>.<span class="hljs-title">GenericWorkItem</span> </span>{
+        <span class="hljs-keyword">final</span> JobWorkItem mJobWork;
+
+        WrapperWorkItem(JobWorkItem jobWork) {
+            mJobWork = jobWork;
+        }
+
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> Intent <span class="hljs-title">getIntent</span><span class="hljs-params">()</span> </span>{
+            <span class="hljs-keyword">return</span> mJobWork.getIntent();
+        }
+
+        <span class="hljs-meta">@Override</span>
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">complete</span><span class="hljs-params">()</span> </span>{
+            <span class="hljs-keyword">synchronized</span> (mLock) {
+                <span class="hljs-keyword">if</span> (mParams != <span class="hljs-keyword">null</span>) {
+                    <span class="hljs-keyword">try</span> {
+                        mParams.completeWork(mJobWork);
+                    } <span class="hljs-keyword">catch</span> (SecurityException se) {
+                        <span class="hljs-comment">// ignore</span>
+                        se.printStackTrace();
+                    }
+                }
+            }
+        }
+    }
+
+    SafeJobServiceEngineImpl(JobIntentService service) {
+        <span class="hljs-keyword">super</span>(service);
+        mService = service;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> IBinder <span class="hljs-title">compatGetBinder</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> getBinder();
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">onStartJob</span><span class="hljs-params">(JobParameters params)</span> </span>{
+        <span class="hljs-keyword">if</span> (DEBUG) Log.d(TAG, <span class="hljs-string">&quot;onStartJob: &quot;</span> + params);
+        mParams = params;
+        <span class="hljs-comment">// We can now start dequeuing work!</span>
+        mService.ensureProcessorRunningLocked(<span class="hljs-keyword">false</span>);
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">onStopJob</span><span class="hljs-params">(JobParameters params)</span> </span>{
+        <span class="hljs-keyword">if</span> (DEBUG) Log.d(TAG, <span class="hljs-string">&quot;onStopJob: &quot;</span> + params);
+        <span class="hljs-keyword">boolean</span> result = mService.doStopCurrentWork();
+        <span class="hljs-keyword">synchronized</span> (mLock) {
+            <span class="hljs-comment">// Once we return, the job is stopped, so its JobParameters are no</span>
+            <span class="hljs-comment">// longer valid and we should not be doing anything with them.</span>
+            mParams = <span class="hljs-keyword">null</span>;
+        }
+        <span class="hljs-keyword">return</span> result;
+    }
+
+    <span class="hljs-comment">/**
+     * Dequeue some work.
+     */</span>
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-keyword">public</span> JobIntentService.<span class="hljs-function">GenericWorkItem <span class="hljs-title">dequeueWork</span><span class="hljs-params">()</span> </span>{
+        JobWorkItem work = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">synchronized</span> (mLock) {
+            <span class="hljs-keyword">if</span> (mParams == <span class="hljs-keyword">null</span>) {
+                <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+            }
+            <span class="hljs-keyword">try</span> {
+                work = mParams.dequeueWork();
+            } <span class="hljs-keyword">catch</span> (SecurityException se) {
+                <span class="hljs-comment">// ignore it</span>
+                se.printStackTrace();
+            }
+        }
+        <span class="hljs-keyword">if</span> (work != <span class="hljs-keyword">null</span>) {
+            work.getIntent().setExtrasClassLoader(mService.getClassLoader());
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> WrapperWorkItem(work);
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        }
+    }
+}
+</code></pre>
+<p><a href="https://github.com/evernote/android-job/issues/255" target="_blank">issues</a></p>
+<p><a href="https://github.com/evernote/android-job/tree/master/library/src/main/java/android/support/v4/app" target="_blank">How to fix</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Crash-finalize.html" class="navigation navigation-prev " aria-label="Previous page: finalize timeout">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Crash-WorkManager.html" class="navigation navigation-next " aria-label="Next page: WorkManager initialize">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"JobIntentService timeout","level":"1.6.2","depth":2,"next":{"title":"WorkManager initialize","level":"1.6.3","depth":2,"path":"Sources/Program/Crash-WorkManager.md","ref":"Sources/Program/Crash-WorkManager.md","articles":[]},"previous":{"title":"finalize timeout","level":"1.6.1","depth":2,"path":"Sources/Program/Crash-finalize.md","ref":"Sources/Program/Crash-finalize.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors","anchor-navigation-ex"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"isShowTocTitleIcon":false,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"heading-anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"a284628487","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Android","language":"zh-hans","output.name":"site","links":{"sidebar":{}},"gitbook":"3.2.3","description":"Android"},"file":{"path":"Sources/Program/Crash-JobIntentService.md","mtime":"2019-08-09T13:42:20.548Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-07T11:18:12.421Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

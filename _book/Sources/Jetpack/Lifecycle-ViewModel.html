@@ -1,0 +1,1157 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ViewModel · Android</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="a284628487">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Lifecycle-Lifecycle.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Welcome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    RxJava
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../RxJava/RxJava-Operator.html">
+            
+                <a href="../RxJava/RxJava-Operator.html">
+            
+                    
+                    RxJava常用操作符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../RxJava/RxJava-Flow.html">
+            
+                <a href="../RxJava/RxJava-Flow.html">
+            
+                    
+                    RxJava流程分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../RxJava/RxJava-RxAndroid.html">
+            
+                <a href="../RxJava/RxJava-RxAndroid.html">
+            
+                    
+                    RxAndroid使用UI线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../RxJava/RxJava-Scheduler.html">
+            
+                <a href="../RxJava/RxJava-Scheduler.html">
+            
+                    
+                    Scheduler任务调度器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../RxJava/RxJava-IoScheduler.html">
+            
+                <a href="../RxJava/RxJava-IoScheduler.html">
+            
+                    
+                    IoScheduler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../RxJava/Scheduler-Practice.html">
+            
+                <a href="../RxJava/Scheduler-Practice.html">
+            
+                    
+                    IoScheduler实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    OkHttp
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../OkHttp/OkHttp.html">
+            
+                <a href="../OkHttp/OkHttp.html">
+            
+                    
+                    OkHttp网络请求框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../OkHttp/OkHttp-Interceptor.html">
+            
+                <a href="../OkHttp/OkHttp-Interceptor.html">
+            
+                    
+                    OkHttp拦截器Interceptor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../OkHttp/OkHttp-AddInterceptor.html">
+            
+                <a href="../OkHttp/OkHttp-AddInterceptor.html">
+            
+                    
+                    OkHttp添加Interceptor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Material
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Material/M-BottomAppBar.html">
+            
+                <a href="../Material/M-BottomAppBar.html">
+            
+                    
+                    BottomAppBar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Material/M-BottomNavigationView.html">
+            
+                <a href="../Material/M-BottomNavigationView.html">
+            
+                    
+                    BottomNavigationView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Material/M-Toolbar.html">
+            
+                <a href="../Material/M-Toolbar.html">
+            
+                    
+                    Toolbar
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Jetpack
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1" data-path="Lifecycle-ViewModel.html">
+            
+                <a href="Lifecycle-ViewModel.html">
+            
+                    
+                    ViewModel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Lifecycle-Lifecycle.html">
+            
+                <a href="Lifecycle-Lifecycle.html">
+            
+                    
+                    Handing Lifecycles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="Lifecycle-LiveData.html">
+            
+                <a href="Lifecycle-LiveData.html">
+            
+                    
+                    LiveData
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Android Crash
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Program/Crash-finalize.html">
+            
+                <a href="../Program/Crash-finalize.html">
+            
+                    
+                    finalize timeout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Program/Crash-JobIntentService.html">
+            
+                <a href="../Program/Crash-JobIntentService.html">
+            
+                    
+                    JobIntentService timeout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Program/Crash-WorkManager.html">
+            
+                <a href="../Program/Crash-WorkManager.html">
+            
+                    
+                    WorkManager initialize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Program/Crash-res.html">
+            
+                <a href="../Program/Crash-res.html">
+            
+                    
+                    资源文件适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Util
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Util/git-svn.html">
+            
+                <a href="../Util/git-svn.html">
+            
+                    
+                    Git/SVN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Util/adb.html">
+            
+                <a href="../Util/adb.html">
+            
+                    
+                    Android ADB命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Util/Code-check.html">
+            
+                <a href="../Util/Code-check.html">
+            
+                    
+                    代码检查工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Starbucks
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../Program/FLAG_ACTIVITY_NEW_TASK.html">
+            
+                <a href="../Program/FLAG_ACTIVITY_NEW_TASK.html">
+            
+                    
+                    FLAG_ACTIVITY_NEW_TASK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../Program/Launch-Optimize.html">
+            
+                <a href="../Program/Launch-Optimize.html">
+            
+                    
+                    App启动时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    AOSP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../AOSP/build.html">
+            
+                <a href="../AOSP/build.html">
+            
+                    
+                    AOSP源码下载及编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../AOSP/add_systemservice.html">
+            
+                <a href="../AOSP/add_systemservice.html">
+            
+                    
+                    AOSP添加系统服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Node.Js 基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Node.js/NodeJS-Begin.html">
+            
+                <a href="../Node.js/NodeJS-Begin.html">
+            
+                    
+                    NodeJS 入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Node.js/NodeJS-Common-Module.html">
+            
+                <a href="../Node.js/NodeJS-Common-Module.html">
+            
+                    
+                    NodeJS 基础模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../Node.js/NodeJS-Util.html">
+            
+                <a href="../Node.js/NodeJS-Util.html">
+            
+                    
+                    NodeJS Util工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../Node.js/NodeJS-Buffer.html">
+            
+                <a href="../Node.js/NodeJS-Buffer.html">
+            
+                    
+                    NodeJS Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../Node.js/NodeJS-File.html">
+            
+                <a href="../Node.js/NodeJS-File.html">
+            
+                    
+                    NodeJS 文件读写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../Node.js/NodeJS-Stream.html">
+            
+                <a href="../Node.js/NodeJS-Stream.html">
+            
+                    
+                    NodeJS Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../Node.js/NodeJS-Crypto.html">
+            
+                <a href="../Node.js/NodeJS-Crypto.html">
+            
+                    
+                    NodeJS 加密模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../Node.js/NodeJS-EventLoop.html">
+            
+                <a href="../Node.js/NodeJS-EventLoop.html">
+            
+                    
+                    NodeJS 事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../Node.js/NodeJS-Http.html">
+            
+                <a href="../Node.js/NodeJS-Http.html">
+            
+                    
+                    NodeJS Http模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="../Node.js/NodeJS-Module-Principle.html">
+            
+                <a href="../Node.js/NodeJS-Module-Principle.html">
+            
+                    
+                    NodeJS 模块原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Node.Js 模块实践
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../Node.js/NodeJS-MySQL.html">
+            
+                <a href="../Node.js/NodeJS-MySQL.html">
+            
+                    
+                    NodeJS MySQL数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../Node.js/NodeJS-Express.html">
+            
+                <a href="../Node.js/NodeJS-Express.html">
+            
+                    
+                    NodeJS Express
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../Node.js/NodeJS-Express-Router.html">
+            
+                <a href="../Node.js/NodeJS-Express-Router.html">
+            
+                    
+                    NodeJS Express Router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../Node.js/NodeJS-RESTful-Api.html">
+            
+                <a href="../Node.js/NodeJS-RESTful-Api.html">
+            
+                    
+                    NodeJS RESTful Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../Node.js/NodeJS-Promise-Callback.html">
+            
+                <a href="../Node.js/NodeJS-Promise-Callback.html">
+            
+                    
+                    NodeJS Promise Callback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../Node.js/NodeJS-EventProxy-Async.html">
+            
+                <a href="../Node.js/NodeJS-EventProxy-Async.html">
+            
+                    
+                    NodeJS EventProxy Async
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../Node.js/NodeJS-ejs.html">
+            
+                <a href="../Node.js/NodeJS-ejs.html">
+            
+                    
+                    NodeJS EJS模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../Node.js/NodeJS-Spider.html">
+            
+                <a href="../Node.js/NodeJS-Spider.html">
+            
+                    
+                    NodeJS Cheerio爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="../Node.js/NodeJS-Excel.html">
+            
+                <a href="../Node.js/NodeJS-Excel.html">
+            
+                    
+                    NodeJS Excel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.10" data-path="../Node.js/NodeJS-Static-File.html">
+            
+                <a href="../Node.js/NodeJS-Static-File.html">
+            
+                    
+                    NodeJS 静态文件服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.11" data-path="../Node.js/NodeJS-Test.html">
+            
+                <a href="../Node.js/NodeJS-Test.html">
+            
+                    
+                    NodeJS 测试框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >ViewModel</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#implement-a-viewmodel"><b>1.1. </b>Implement a ViewModel</a></li><li><span class="title-icon "></span><a href="#lifecycle-of-viewmodel"><b>1.2. </b>Lifecycle of ViewModel</a></li><li><span class="title-icon "></span><a href="#share-data"><b>1.3. </b>Share data</a></li><li><span class="title-icon "></span><a href="#replacing-loaders"><b>1.4. </b>Replacing Loaders</a></li><li><span class="title-icon "></span><a href="#use-coroutines"><b>1.5. </b>Use coroutines</a></li><li><span class="title-icon "></span><a href="#further-information"><b>1.6. </b>Further information</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p>ViewModel&#x7C7B;&#x7684;&#x8BBE;&#x8BA1;&#x76EE;&#x7684;&#x662F;&#x4EE5;&#x751F;&#x547D;&#x5468;&#x671F;&#x610F;&#x8BC6;&#x7684;&#x65B9;&#x5F0F;&#x5B58;&#x50A8;&#x548C;&#x7BA1;&#x7406;&#x4E0E;UI&#x76F8;&#x5173;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<h2 id="implement-a-viewmodel"><a name="implement-a-viewmodel" class="anchor-navigation-ex-anchor" href="#implement-a-viewmodel"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Implement a ViewModel</h2>
+<p>Arch&#x4F53;&#x7CFB;&#x7ED3;&#x6784;&#x7EC4;&#x4EF6;&#x63D0;&#x4F9B;ViewModel&#x5E2E;&#x52A9;&#x5668;&#x7C7B;&#x3002;&#x5728;Activity&#x6216;&#x8005;Fragment&#x914D;&#x7F6E;&#x66F4;&#x6539;&#x65F6;&#xFF0C;ViewModel&#x5BF9;&#x8C61;&#x4F1A;&#x81EA;&#x52A8;&#x4FDD;&#x7559;&#xFF0C;&#x4EE5;&#x4FBF;&#x5B83;&#x4EEC;&#x4FDD;&#x5B58;&#x7684;&#x6570;&#x636E;&#x7ACB;&#x5373;&#x53EF;&#x7528;&#x4E8E;&#x4E0B;&#x4E00;&#x4E2A;Activity&#x6216;Fragment&#x5B9E;&#x4F8B;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x5728;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E2D;&#x663E;&#x793A;&#x7528;&#x6237;&#x5217;&#x8868;&#xFF0C;&#x8BF7;&#x786E;&#x4FDD;&#x5C06;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x5217;&#x8868;&#x7684;&#x8D23;&#x4EFB;&#x5206;&#x914D;&#x7ED9;ViewModel&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6D3B;&#x52A8;&#x6216;&#x7247;&#x6BB5;&#xFF0C;&#x5982;&#x4E0B;&#x9762;&#x7684;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyViewModel</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ViewModel</span> </span>{
+    <span class="hljs-keyword">private</span> MutableLiveData&lt;List&lt;User&gt;&gt; users;
+
+    <span class="hljs-keyword">public</span> LiveData&lt;List&lt;User&gt;&gt; getUsers() {
+        <span class="hljs-keyword">if</span> (users == <span class="hljs-keyword">null</span>) {
+            users = <span class="hljs-keyword">new</span> MutableLiveData&lt;List&lt;User&gt;&gt;();
+            loadUsers();
+        }
+        <span class="hljs-keyword">return</span> users;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">loadUsers</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">// Do an asynchronous operation to fetch users.</span>
+    }
+}
+</code></pre>
+<p>&#x7136;&#x540E;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x4ECE;&#x4EE5;&#x4E0B;&#x6D3B;&#x52A8;&#x8BBF;&#x95EE;&#x5217;&#x8868;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyActivity</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AppCompatActivity</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+        <span class="hljs-comment">// Create a ViewModel the first time the system calls an activity&apos;s onCreate() method.</span>
+        <span class="hljs-comment">// Re-created activities receive the same MyViewModel instance created by the first activity.</span>
+
+        MyViewModel model = ViewModelProviders.of(<span class="hljs-keyword">this</span>).get(MyViewModel.class);
+        model.getUsers().observe(<span class="hljs-keyword">this</span>, users -&gt; {
+            <span class="hljs-comment">// update UI</span>
+        });
+    }
+}
+</code></pre>
+<p>&#x5982;&#x679C;Activity&#x88AB;&#x91CD;&#x65B0;&#x521B;&#x5EFA;&#xFF0C;&#x5B83;&#x5C06;&#x63A5;&#x6536;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;Activity&#x521B;&#x5EFA;&#x7684;&#x76F8;&#x540C;MyViewModel&#x5B9E;&#x4F8B;&#x3002;&#x5F53;owner&#x6D3B;&#x52A8;&#x5B8C;&#x6210;&#x65F6;&#xFF0C;&#x6846;&#x67B6;&#x8C03;&#x7528;viewModel&#x5BF9;&#x8C61;&#x7684;onCleared()&#x65B9;&#x6CD5;&#xFF0C;&#x4EE5;&#x4FBF;&#x6E05;&#x7406;&#x8D44;&#x6E90;&#x3002;</p>
+<blockquote>
+<p>&#x89C6;&#x56FE;&#x6A21;&#x578B;&#x51B3;&#x4E0D;&#x80FD;&#x5F15;&#x7528;View&#x3001;Lifecycle&#x6216;&#x4EFB;&#x4F55;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x5BF9;Activity&#x7684;Context&#x6709;&#x5F15;&#x7528;&#x7684;&#x7C7B;&#x3002;</p>
+</blockquote>
+<p>ViewModel&#x5BF9;&#x8C61;&#x88AB;&#x8BBE;&#x8BA1;&#x4E3A;&#x6BD4;View&#x6216;LifecycleOwners&#x5B58;&#x5728;&#x66F4;&#x957F;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x8FD9;&#x79CD;&#x8BBE;&#x8BA1;&#x8FD8;&#x610F;&#x5473;&#x7740;&#x60A8;&#x53EF;&#x4EE5;&#x7F16;&#x5199;&#x6D4B;&#x8BD5;&#x6765;&#x66F4;&#x5BB9;&#x6613;&#x5730;&#x8986;&#x76D6;&#x4E00;&#x4E2A;ViewModel&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4E0D;&#x77E5;&#x9053;View&#x548C;Lifecycle&#x5BF9;&#x8C61;&#x3002;ViewModel&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x5305;&#x542B;LifecycleOwners&#xFF0C;&#x4F8B;&#x5982;LiveData&#x5BF9;&#x8C61;&#x3002;&#x7136;&#x800C;&#xFF0C;ViewModel&#x5BF9;&#x8C61;&#x7EDD;&#x4E0D;&#x80FD;&#x89C2;&#x5BDF;&#x5230;&#x751F;&#x547D;&#x5468;&#x671F;&#x611F;&#x77E5;&#x7684;&#x53EF;&#x89C2;&#x5BDF;&#x5230;&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x4F8B;&#x5982;LiveData&#x5BF9;&#x8C61;&#x3002;&#x5982;&#x679C;ViewModel&#x9700;&#x8981;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;&#x4F8B;&#x5982;&#x4E3A;&#x4E86;&#x83B7;&#x53D6;&#x7CFB;&#x7EDF;&#x670D;&#x52A1;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x6269;&#x5C55;AndroidViewModel&#x7C7B;&#xFF0C;&#x5E76;&#x6709;&#x4E00;&#x4E2A;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#x63A5;&#x6536;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x56E0;&#x4E3A;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7C7B;&#x6269;&#x5C55;&#x4E86;Context&#x3002;</p>
+<h2 id="lifecycle-of-viewmodel"><a name="lifecycle-of-viewmodel" class="anchor-navigation-ex-anchor" href="#lifecycle-of-viewmodel"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Lifecycle of ViewModel</h2>
+<p>&#x5728;&#x83B7;&#x53D6;ViewModel&#x65F6;&#xFF0C;ViewModel&#x5BF9;&#x8C61;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x662F;&#x4F20;&#x9012;&#x7ED9;ViewModelProvider&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x3002;ViewModel&#x5C06;&#x4E00;&#x76F4;&#x4FDD;&#x7559;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x76F4;&#x5230;&#x5B83;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x6C38;&#x4E45;&#x6D88;&#x5931;&#xFF1A;&#x5BF9;&#x4E8E;Activity&#xFF0C;&#x5F53;&#x5B83;Finish&#x65F6;&#xFF0C;&#x800C;&#x5BF9;&#x4E8E;Fragment&#xFF0C;&#x5F53;&#x5B83;detach&#x65F6;&#x3002;</p>
+<p>&#x4E0B;&#x56FE;&#x8BF4;&#x660E;&#x4E86;&#x4E00;&#x4E2A;Activity&#x5728;&#x7ECF;&#x5386;&#x4E00;&#x4E2A;&#x65CB;&#x8F6C;&#x7136;&#x540E;&#x5B8C;&#x6210;&#x65F6;&#x7684;&#x5404;&#x79CD;&#x751F;&#x547D;&#x5468;&#x671F;&#x72B6;&#x6001;&#x3002;&#x56FE;&#x4E2D;&#x8FD8;&#x663E;&#x793A;&#x4E86;&#x5173;&#x8054;&#x6D3B;&#x52A8;&#x751F;&#x547D;&#x5468;&#x671F;&#x65C1;&#x8FB9;&#x7684;ViewModel&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x3002;&#x8FD9;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x56FE;&#x8BF4;&#x660E;&#x4E86;&#x4E00;&#x4E2A;Activity&#x7684;&#x72B6;&#x6001;&#x3002;&#x540C;&#x6837;&#x7684;&#x57FA;&#x672C;&#x72B6;&#x6001;&#x4E5F;&#x9002;&#x7528;&#x4E8E;Fragment&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x3002;</p>
+<p><img src="../images/Lifecycle-ViewModel.png" alt="viewmodel"></p>
+<p>&#x901A;&#x5E38;&#x5728;&#x7CFB;&#x7EDF;&#x7B2C;&#x4E00;&#x6B21;&#x8C03;&#x7528;Activity&#x5BF9;&#x8C61;&#x7684;onCreate()&#x65B9;&#x6CD5;&#x65F6;&#x8BF7;&#x6C42;ViewModel&#x3002;&#x5728;&#x6D3B;&#x52A8;&#x7684;&#x6574;&#x4E2A;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E2D;&#xFF0C;&#x7CFB;&#x7EDF;&#x53EF;&#x80FD;&#x4F1A;&#x591A;&#x6B21;&#x8C03;&#x7528;onCreate()&#xFF0C;&#x4F8B;&#x5982;&#x5F53;&#x8BBE;&#x5907;&#x5C4F;&#x5E55;&#x65CB;&#x8F6C;&#x65F6;&#x3002;&#x4ECE;&#x60A8;&#x7B2C;&#x4E00;&#x6B21;&#x8BF7;&#x6C42;ViewModel&#x5F00;&#x59CB;&#xFF0C;&#x5230;&#x6D3B;&#x52A8;&#x5B8C;&#x6210;&#x5E76;&#x9500;&#x6BC1;&#x4E3A;&#x6B62;&#xFF0C;&#x90FD;&#x5B58;&#x5728;&#x8BE5;ViewModel&#x3002;</p>
+<h2 id="share-data"><a name="share-data" class="anchor-navigation-ex-anchor" href="#share-data"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Share data</h2>
+<p>&#x4E00;&#x4E2A;Activity&#x4E2D;&#x7684;&#x4E24;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x7247;&#x6BB5;&#x9700;&#x8981;&#x76F8;&#x4E92;&#x901A;&#x4FE1;&#x662F;&#x5F88;&#x5E38;&#x89C1;&#x7684;&#x3002;&#x8BBE;&#x60F3;&#x4E00;&#x4E2A;&#x4E3B;&#x7EC6;&#x8282;&#x7247;&#x6BB5;&#x7684;&#x5E38;&#x89C1;&#x60C5;&#x51B5;&#xFF0C;&#x5176;&#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x7247;&#x6BB5;&#xFF0C;&#x7528;&#x6237;&#x4ECE;&#x5217;&#x8868;&#x4E2D;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x7247;&#x6BB5;&#x663E;&#x793A;&#x6240;&#x9009;&#x9879;&#x76EE;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x6C38;&#x8FDC;&#x90FD;&#x4E0D;&#x7B80;&#x5355;&#xFF0C;&#x56E0;&#x4E3A;&#x4E24;&#x4E2A;Fragment&#x90FD;&#x9700;&#x8981;&#x5B9A;&#x4E49;&#x4E00;&#x4E9B;&#x63A5;&#x53E3;&#x63CF;&#x8FF0;&#xFF0C;&#x5E76;&#x4E14;&#x6240;&#x6709;&#x8005;Activity&#x5FC5;&#x987B;&#x5C06;&#x8FD9;&#x4E24;&#x4E2A;Fragment&#x7ED1;&#x5B9A;&#x5728;&#x4E00;&#x8D77;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x4E24;&#x4E2A;Fragment&#x90FD;&#x5FC5;&#x987B;&#x5904;&#x7406;&#x53E6;&#x4E00;&#x4E2A;Fragment&#x5C1A;&#x672A;&#x521B;&#x5EFA;&#x6216;&#x8FD8;&#x4E0D;&#x53EF;&#x89C1;&#x7684;&#x573A;&#x666F;&#x3002;</p>
+<p>&#x4F7F;&#x7528;ViewModel&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x5E38;&#x89C1;&#x7684;&#x75DB;&#x70B9;&#x3002;&#x8FD9;&#x4E9B;Fragment&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5176;Activity&#x7684;scope&#x5171;&#x4EAB;&#x4E00;&#x4E2A;ViewModel&#x6765;&#x5904;&#x7406;&#x6B64;&#x901A;&#x4FE1;&#xFF0C;&#x5982;&#x4E0B;&#x9762;&#x7684;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SharedViewModel</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ViewModel</span> </span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> MutableLiveData&lt;Item&gt; selected = <span class="hljs-keyword">new</span> MutableLiveData&lt;Item&gt;();
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">select</span><span class="hljs-params">(Item item)</span> </span>{
+        selected.setValue(item);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> LiveData&lt;Item&gt; <span class="hljs-title">getSelected</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> selected;
+    }
+}
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MasterFragment</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Fragment</span> </span>{
+    <span class="hljs-keyword">private</span> SharedViewModel model;
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+        <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+        model = ViewModelProviders.of(getActivity()).get(SharedViewModel.class);
+        itemSelector.setOnClickListener(item -&gt; {
+            model.select(item);
+        });
+    }
+}
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DetailFragment</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Fragment</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCreate</span><span class="hljs-params">(Bundle savedInstanceState)</span> </span>{
+        <span class="hljs-keyword">super</span>.onCreate(savedInstanceState);
+        SharedViewModel model = ViewModelProviders.of(getActivity()).get(SharedViewModel.class);
+        model.getSelected().observe(<span class="hljs-keyword">this</span>, { item -&gt;
+           <span class="hljs-comment">// Update the UI.</span>
+        });
+    }
+}
+</code></pre>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;Fragment&#x90FD;&#x68C0;&#x7D22;&#x5305;&#x542B;&#x5B83;&#x4EEC;&#x7684;Activity&#x3002;&#x5F53;Fragment&#x5404;&#x81EA;&#x83B7;&#x5F97;ViewModelProvider&#x65F6;&#xFF0C;&#x5B83;&#x4EEC;&#x4F1A;&#x6536;&#x5230;&#x76F8;&#x540C;&#x7684;SharedViewModel&#x5B9E;&#x4F8B;&#xFF0C;&#x8BE5;&#x5B9E;&#x4F8B;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x662F;&#x6B64;Activity&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x3002;</p>
+<p>&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x6709;&#x4EE5;&#x4E0B;&#x597D;&#x5904;&#xFF1A;</p>
+<ul>
+<li>&#x8BE5;&#x6D3B;&#x52A8;&#x4E0D;&#x9700;&#x8981;&#x505A;&#x4EFB;&#x4F55;&#x4E8B;&#x60C5;&#xFF0C;&#x4E5F;&#x4E0D;&#x9700;&#x8981;&#x77E5;&#x9053;&#x4EFB;&#x4F55;&#x6709;&#x5173;&#x6B64;&#x901A;&#x4FE1;&#x7684;&#x4FE1;&#x606F;&#x3002;</li>
+<li>&#x9664;&#x4E86;SharedviewModel&#x4E4B;&#x5916;&#xFF0C;Fragment&#x4E0D;&#x9700;&#x8981;&#x4E92;&#x76F8;&#x4E86;&#x89E3;&#x3002;&#x5982;&#x679C;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;Fragment&#x6D88;&#x5931;&#x4E86;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x4ECD;&#x7136;&#x80FD;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#x3002;</li>
+<li>&#x6BCF;&#x4E2A;Fragment&#x90FD;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x53D7;&#x53E6;&#x4E00;&#x4E2A;Fragment&#x751F;&#x547D;&#x5468;&#x671F;&#x7684;&#x5F71;&#x54CD;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;Fragment&#x66FF;&#x6362;&#x53E6;&#x4E00;&#x4E2A;Fragment&#xFF0C;&#x90A3;&#x4E48;UI&#x5C06;&#x7EE7;&#x7EED;&#x5DE5;&#x4F5C;&#x800C;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x4EFB;&#x4F55;&#x95EE;&#x9898;&#x3002;</li>
+</ul>
+<h2 id="replacing-loaders"><a name="replacing-loaders" class="anchor-navigation-ex-anchor" href="#replacing-loaders"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. Replacing Loaders</h2>
+<p>&#x50CF;<a href="https://developer.android.com/reference/android/content/CursorLoader.html" target="_blank">CursorLoader</a>&#x8FD9;&#x6837;&#x7684;&#x52A0;&#x8F7D;&#x5668;&#x7C7B;&#x7ECF;&#x5E38;&#x7528;&#x4E8E;&#x4FDD;&#x6301;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;UI&#x4E2D;&#x7684;&#x6570;&#x636E;&#x4E0E;&#x6570;&#x636E;&#x5E93;&#x540C;&#x6B65;&#x3002;&#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;ViewModel&#x548C;&#x5176;&#x4ED6;&#x4E00;&#x4E9B;&#x7C7B;&#x6765;&#x66FF;&#x6362;&#x52A0;&#x8F7D;&#x7A0B;&#x5E8F;&#x3002;&#x4F7F;&#x7528;ViewModel&#x5C06;UI&#x63A7;&#x5236;&#x5668;&#x4E0E;&#x6570;&#x636E;&#x52A0;&#x8F7D;&#x64CD;&#x4F5C;&#x5206;&#x5F00;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x7C7B;&#x4E4B;&#x95F4;&#x7684;&#x5F3A;&#x5F15;&#x7528;&#x66F4;&#x5C11;&#x3002;</p>
+<p>&#x5728;&#x4F7F;&#x7528;&#x52A0;&#x8F7D;&#x5668;&#x7684;&#x4E00;&#x79CD;&#x5E38;&#x89C1;&#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x53EF;&#x80FD;&#x4F7F;&#x7528;CursorLoader&#x6765;&#x89C2;&#x5BDF;&#x6570;&#x636E;&#x5E93;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x5F53;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x503C;&#x66F4;&#x6539;&#x65F6;&#xFF0C;&#x52A0;&#x8F7D;&#x7A0B;&#x5E8F;&#x81EA;&#x52A8;&#x89E6;&#x53D1;&#x6570;&#x636E;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x5E76;&#x66F4;&#x65B0;&#x7528;&#x6237;&#x754C;&#x9762;&#xFF1A;</p>
+<p><img src="../images/ViewModel-Loader.png" alt="ViewModel-Loader"></p>
+<p>ViewModel&#x4F7F;&#x7528;Room&#x548C;LiveData&#x6765;&#x66FF;&#x6362;loader&#x3002;ViewModel&#x786E;&#x4FDD;&#x6570;&#x636E;&#x5728;&#x8BBE;&#x5907;&#x914D;&#x7F6E;&#x66F4;&#x6539;&#x540E;&#x4ECD;&#x7136;&#x5B58;&#x5728;&#x3002;&#x5F53;&#x6570;&#x636E;&#x5E93;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#xFF0C;Room&#x4F1A;&#x901A;&#x77E5;&#x60A8;&#x7684;LiveData&#xFF0C;&#x800C;LiveData&#x4F1A;&#x53CD;&#x8FC7;&#x6765;&#x7528;&#x4FEE;&#x6539;&#x540E;&#x7684;&#x6570;&#x636E;&#x66F4;&#x65B0;&#x60A8;&#x7684;UI&#x3002;</p>
+<p><img src="../images/ViewModel-Replace-Loader.png" alt="ViewModel-Replace-Loader"></p>
+<h2 id="use-coroutines"><a name="use-coroutines" class="anchor-navigation-ex-anchor" href="#use-coroutines"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. Use coroutines</h2>
+<p>ViewModel&#x5305;&#x62EC;&#x5BF9;Kotlin Coroutines&#x7684;&#x652F;&#x6301;&#x3002;&#x6709;&#x5173;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;<a href="https://developer.android.com/topic/libraries/architecture/coroutines" target="_blank">Use Kotlin coroutines with Android Architecture Components</a>.</p>
+<h2 id="further-information"><a name="further-information" class="anchor-navigation-ex-anchor" href="#further-information"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. Further information</h2>
+<p>&#x968F;&#x7740;&#x6570;&#x636E;&#x53D8;&#x5F97;&#x8D8A;&#x6765;&#x8D8A;&#x590D;&#x6742;&#xFF0C;&#x60A8;&#x53EF;&#x80FD;&#x4F1A;&#x9009;&#x62E9;&#x5355;&#x72EC;&#x7684;&#x7C7B;&#x6765;&#x52A0;&#x8F7D;&#x6570;&#x636E;&#x3002;ViewModel&#x7684;&#x76EE;&#x7684;&#x662F;&#x5C01;&#x88C5;UI&#x63A7;&#x5236;&#x5668;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4EE5;&#x4F7F;&#x6570;&#x636E;&#x5728;&#x914D;&#x7F6E;&#x66F4;&#x6539;&#x540E;&#x4ECD;&#x7136;&#x5B58;&#x5728;&#x3002;&#x6709;&#x5173;&#x5982;&#x4F55;&#x8DE8;&#x914D;&#x7F6E;&#x66F4;&#x6539;&#x52A0;&#x8F7D;&#x3001;&#x4FDD;&#x6301;&#x548C;&#x7BA1;&#x7406;&#x6570;&#x636E;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x8BF7;&#x53C2;&#x9605;<a href="https://developer.android.com/topic/libraries/architecture/saving-states.html" target="_blank">Saving UI States</a>&#x3002;</p>
+<p>Samples</p>
+<ul>
+<li><a href="https://github.com/googlesamples/android-architecture-components/tree/master/BasicSample" target="_blank">Android Architecture Components basic sample</a></li>
+<li><a href="https://github.com/googlesamples/android-sunflower" target="_blank">Sunflower</a>, a gardening app illustrating Android development best practices with Android Jetpack.</li>
+</ul>
+<p>Codelabs</p>
+<ul>
+<li>Android Room with a View <a href="https://codelabs.developers.google.com/codelabs/android-room-with-a-view" target="_blank">(Java)</a> <a href="https://codelabs.developers.google.com/codelabs/android-room-with-a-view-kotlin" target="_blank">(Kotlin)</a></li>
+<li><a href="https://codelabs.developers.google.com/codelabs/android-lifecycles/#0" target="_blank">Android lifecycle-aware components codelab</a></li>
+</ul>
+<p>Blogs</p>
+<ul>
+<li><a href="https://medium.com/androiddevelopers/viewmodels-a-simple-example-ed5ac416317e" target="_blank">ViewModels : A Simple Example</a></li>
+<li><a href="https://medium.com/androiddevelopers/viewmodels-persistence-onsaveinstancestate-restoring-ui-state-and-loaders-fc7cc4a6c090" target="_blank">ViewModels: Persistence, onSaveInstanceState(), Restoring UI State and Loaders</a></li>
+<li><a href="https://medium.com/androiddevelopers/viewmodels-and-livedata-patterns-antipatterns-21efaef74a54" target="_blank">ViewModels and LiveData: Patterns + AntiPatterns</a></li>
+<li><a href="https://medium.com/androiddevelopers/kotlin-demystified-understanding-shorthand-lamba-syntax-74724028dcc5" target="_blank">Kotlin Demystified: Understanding Shorthand Lambda Syntax</a></li>
+<li><a href="https://medium.com/androiddevelopers/kotlin-demystified-scope-functions-57ca522895b1" target="_blank">Kotlin Demystified: Scope functions</a></li>
+<li><a href="https://medium.com/androiddevelopers/kotlin-demystified-when-to-use-custom-accessors-939a6e998899" target="_blank">Kotlin Demystified: When to use custom accessors</a></li>
+<li><a href="https://medium.com/google-developers/lifecycle-aware-data-loading-with-android-architecture-components-f95484159de4" target="_blank">Lifecycle Aware Data Loading with Architecture Components</a></li>
+</ul>
+<p>Videos</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=5qlIPTDE274&amp;t=30s" target="_blank">Android Jetpack: ViewModel</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="Lifecycle-Lifecycle.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Handing Lifecycles">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ViewModel","level":"1.5.1","depth":2,"next":{"title":"Handing Lifecycles","level":"1.5.2","depth":2,"path":"Sources/Jetpack/Lifecycle-Lifecycle.md","ref":"Sources/Jetpack/Lifecycle-Lifecycle.md","articles":[]},"previous":{"title":"Jetpack","level":"1.5","depth":1,"ref":"","articles":[{"title":"ViewModel","level":"1.5.1","depth":2,"path":"Sources/Jetpack/Lifecycle-ViewModel.md","ref":"Sources/Jetpack/Lifecycle-ViewModel.md","articles":[]},{"title":"Handing Lifecycles","level":"1.5.2","depth":2,"path":"Sources/Jetpack/Lifecycle-Lifecycle.md","ref":"Sources/Jetpack/Lifecycle-Lifecycle.md","articles":[]},{"title":"LiveData","level":"1.5.3","depth":2,"path":"Sources/Jetpack/Lifecycle-LiveData.md","ref":"Sources/Jetpack/Lifecycle-LiveData.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["heading-anchors","anchor-navigation-ex"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"isShowTocTitleIcon":false,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"heading-anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"a284628487","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Android","language":"zh-hans","output.name":"site","links":{"sidebar":{}},"gitbook":"3.2.3","description":"Android"},"file":{"path":"Sources/Jetpack/Lifecycle-ViewModel.md","mtime":"2019-07-17T04:22:25.836Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-07T11:18:12.421Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

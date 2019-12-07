@@ -1,0 +1,1177 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>App启动时间 · Android</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="a284628487">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="FLAG_ACTIVITY_NEW_TASK.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Welcome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    RxJava
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../RxJava/RxJava-Operator.html">
+            
+                <a href="../RxJava/RxJava-Operator.html">
+            
+                    
+                    RxJava常用操作符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../RxJava/RxJava-Flow.html">
+            
+                <a href="../RxJava/RxJava-Flow.html">
+            
+                    
+                    RxJava流程分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../RxJava/RxJava-RxAndroid.html">
+            
+                <a href="../RxJava/RxJava-RxAndroid.html">
+            
+                    
+                    RxAndroid使用UI线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../RxJava/RxJava-Scheduler.html">
+            
+                <a href="../RxJava/RxJava-Scheduler.html">
+            
+                    
+                    Scheduler任务调度器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../RxJava/RxJava-IoScheduler.html">
+            
+                <a href="../RxJava/RxJava-IoScheduler.html">
+            
+                    
+                    IoScheduler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../RxJava/Scheduler-Practice.html">
+            
+                <a href="../RxJava/Scheduler-Practice.html">
+            
+                    
+                    IoScheduler实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    OkHttp
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../OkHttp/OkHttp.html">
+            
+                <a href="../OkHttp/OkHttp.html">
+            
+                    
+                    OkHttp网络请求框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../OkHttp/OkHttp-Interceptor.html">
+            
+                <a href="../OkHttp/OkHttp-Interceptor.html">
+            
+                    
+                    OkHttp拦截器Interceptor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../OkHttp/OkHttp-AddInterceptor.html">
+            
+                <a href="../OkHttp/OkHttp-AddInterceptor.html">
+            
+                    
+                    OkHttp添加Interceptor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Material
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Material/M-BottomAppBar.html">
+            
+                <a href="../Material/M-BottomAppBar.html">
+            
+                    
+                    BottomAppBar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Material/M-BottomNavigationView.html">
+            
+                <a href="../Material/M-BottomNavigationView.html">
+            
+                    
+                    BottomNavigationView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Material/M-Toolbar.html">
+            
+                <a href="../Material/M-Toolbar.html">
+            
+                    
+                    Toolbar
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Jetpack
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Jetpack/Lifecycle-ViewModel.html">
+            
+                <a href="../Jetpack/Lifecycle-ViewModel.html">
+            
+                    
+                    ViewModel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../Jetpack/Lifecycle-Lifecycle.html">
+            
+                <a href="../Jetpack/Lifecycle-Lifecycle.html">
+            
+                    
+                    Handing Lifecycles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../Jetpack/Lifecycle-LiveData.html">
+            
+                <a href="../Jetpack/Lifecycle-LiveData.html">
+            
+                    
+                    LiveData
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Android Crash
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Crash-finalize.html">
+            
+                <a href="Crash-finalize.html">
+            
+                    
+                    finalize timeout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="Crash-JobIntentService.html">
+            
+                <a href="Crash-JobIntentService.html">
+            
+                    
+                    JobIntentService timeout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="Crash-WorkManager.html">
+            
+                <a href="Crash-WorkManager.html">
+            
+                    
+                    WorkManager initialize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="Crash-res.html">
+            
+                <a href="Crash-res.html">
+            
+                    
+                    资源文件适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Util
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Util/git-svn.html">
+            
+                <a href="../Util/git-svn.html">
+            
+                    
+                    Git/SVN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Util/adb.html">
+            
+                <a href="../Util/adb.html">
+            
+                    
+                    Android ADB命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Util/Code-check.html">
+            
+                <a href="../Util/Code-check.html">
+            
+                    
+                    代码检查工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Starbucks
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="FLAG_ACTIVITY_NEW_TASK.html">
+            
+                <a href="FLAG_ACTIVITY_NEW_TASK.html">
+            
+                    
+                    FLAG_ACTIVITY_NEW_TASK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8.2" data-path="Launch-Optimize.html">
+            
+                <a href="Launch-Optimize.html">
+            
+                    
+                    App启动时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    AOSP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../AOSP/build.html">
+            
+                <a href="../AOSP/build.html">
+            
+                    
+                    AOSP源码下载及编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../AOSP/add_systemservice.html">
+            
+                <a href="../AOSP/add_systemservice.html">
+            
+                    
+                    AOSP添加系统服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Node.Js 基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Node.js/NodeJS-Begin.html">
+            
+                <a href="../Node.js/NodeJS-Begin.html">
+            
+                    
+                    NodeJS 入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Node.js/NodeJS-Common-Module.html">
+            
+                <a href="../Node.js/NodeJS-Common-Module.html">
+            
+                    
+                    NodeJS 基础模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../Node.js/NodeJS-Util.html">
+            
+                <a href="../Node.js/NodeJS-Util.html">
+            
+                    
+                    NodeJS Util工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../Node.js/NodeJS-Buffer.html">
+            
+                <a href="../Node.js/NodeJS-Buffer.html">
+            
+                    
+                    NodeJS Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../Node.js/NodeJS-File.html">
+            
+                <a href="../Node.js/NodeJS-File.html">
+            
+                    
+                    NodeJS 文件读写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../Node.js/NodeJS-Stream.html">
+            
+                <a href="../Node.js/NodeJS-Stream.html">
+            
+                    
+                    NodeJS Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../Node.js/NodeJS-Crypto.html">
+            
+                <a href="../Node.js/NodeJS-Crypto.html">
+            
+                    
+                    NodeJS 加密模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../Node.js/NodeJS-EventLoop.html">
+            
+                <a href="../Node.js/NodeJS-EventLoop.html">
+            
+                    
+                    NodeJS 事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../Node.js/NodeJS-Http.html">
+            
+                <a href="../Node.js/NodeJS-Http.html">
+            
+                    
+                    NodeJS Http模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="../Node.js/NodeJS-Module-Principle.html">
+            
+                <a href="../Node.js/NodeJS-Module-Principle.html">
+            
+                    
+                    NodeJS 模块原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Node.Js 模块实践
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../Node.js/NodeJS-MySQL.html">
+            
+                <a href="../Node.js/NodeJS-MySQL.html">
+            
+                    
+                    NodeJS MySQL数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../Node.js/NodeJS-Express.html">
+            
+                <a href="../Node.js/NodeJS-Express.html">
+            
+                    
+                    NodeJS Express
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../Node.js/NodeJS-Express-Router.html">
+            
+                <a href="../Node.js/NodeJS-Express-Router.html">
+            
+                    
+                    NodeJS Express Router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../Node.js/NodeJS-RESTful-Api.html">
+            
+                <a href="../Node.js/NodeJS-RESTful-Api.html">
+            
+                    
+                    NodeJS RESTful Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../Node.js/NodeJS-Promise-Callback.html">
+            
+                <a href="../Node.js/NodeJS-Promise-Callback.html">
+            
+                    
+                    NodeJS Promise Callback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../Node.js/NodeJS-EventProxy-Async.html">
+            
+                <a href="../Node.js/NodeJS-EventProxy-Async.html">
+            
+                    
+                    NodeJS EventProxy Async
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../Node.js/NodeJS-ejs.html">
+            
+                <a href="../Node.js/NodeJS-ejs.html">
+            
+                    
+                    NodeJS EJS模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../Node.js/NodeJS-Spider.html">
+            
+                <a href="../Node.js/NodeJS-Spider.html">
+            
+                    
+                    NodeJS Cheerio爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="../Node.js/NodeJS-Excel.html">
+            
+                <a href="../Node.js/NodeJS-Excel.html">
+            
+                    
+                    NodeJS Excel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.10" data-path="../Node.js/NodeJS-Static-File.html">
+            
+                <a href="../Node.js/NodeJS-Static-File.html">
+            
+                    
+                    NodeJS 静态文件服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.11" data-path="../Node.js/NodeJS-Test.html">
+            
+                <a href="../Node.js/NodeJS-Test.html">
+            
+                    
+                    NodeJS 测试框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >App启动时间</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x9884;&#x7814;"><b>1.1. </b>&#x9884;&#x7814;</a></li><ul><li><span class="title-icon "></span><a href="#appcompatactivity"><b>1.1.1. </b>AppCompatActivity</a></li><li><span class="title-icon "></span><a href="#activity"><b>1.1.2. </b>Activity</a></li><li><span class="title-icon "></span><a href="#otherapp"><b>1.1.3. </b>OtherApp</a></li><li><span class="title-icon "></span><a href="#theme"><b>1.1.4. </b>Theme</a></li><li><span class="title-icon "></span><a href="#setcontentview"><b>1.1.5. </b>setContentView()</a></li><li><span class="title-icon "></span><a href="#daggeractivity"><b>1.1.6. </b>DaggerActivity</a></li></ul><li><span class="title-icon "></span><a href="#&#x7ED3;&#x8BBA;"><b>1.2. </b>&#x7ED3;&#x8BBA;</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p>&#x5E94;&#x7528;&#x542F;&#x52A8;&#x4F18;&#x5316;</p>
+<p>Android&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x542F;&#x52A8;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;log&#x65E5;&#x5FD7;&#x67E5;&#x770B;&#x5176;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#xFF0C;&#x542F;&#x52A8;&#x4E00;&#x4E2A;Activity&#x65F6;&#xFF0C;&#x4F1A;&#x6709;&#x76F8;&#x5E94;&#x7684;&#x542F;&#x52A8;&#x8017;&#x65F6;&#x8F93;&#x51FA;&#x6BD4;&#x5982;&#xFF1A;<code>ActivityManager: Displayed com.tw.launchpro1/.MainActivity: +951ms</code></p>
+<h2 id="&#x9884;&#x7814;"><a name="&#x9884;&#x7814;" class="anchor-navigation-ex-anchor" href="#&#x9884;&#x7814;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x9884;&#x7814;</h2>
+<p>&#x5EFA;&#x7ACB;&#x4E24;&#x4E2A;&#x7A7A;&#x9879;&#x76EE;App&#xFF0C;packageName&#x4E0D;&#x540C;&#xFF0C;&#x5206;&#x522B;&#x4E3A;<code>com.tw.launchpro1</code>&#x548C;<code>com.tw.launchpro2</code>&#xFF0C;&#x53EA;&#x5305;&#x542B;&#x4E00;&#x4E2A;Activity&#xFF0C;&#x901A;&#x8FC7;&#x6D4B;&#x8BD5;&#x6BD4;&#x5BF9;&#x5176;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x3002;</p>
+<h3 id="appcompatactivity"><a name="appcompatactivity" class="anchor-navigation-ex-anchor" href="#appcompatactivity"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. AppCompatActivity</h3>
+<pre><code class="lang-java">class MainActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+    }
+}
+</code></pre>
+<p>&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x5BF9;&#x6BD4;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">11</span>:<span class="hljs-number">14</span>:<span class="hljs-number">09.253</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro1/.MainActivity: +<span class="hljs-number">956</span>ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">11</span>:<span class="hljs-number">14</span>:<span class="hljs-number">13.359</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro2/.MainActivity: +<span class="hljs-number">952</span>ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">11</span>:<span class="hljs-number">14</span>:<span class="hljs-number">17.397</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro1/.MainActivity: +<span class="hljs-number">957</span>ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">11</span>:<span class="hljs-number">14</span>:<span class="hljs-number">20.478</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro2/.MainActivity: +<span class="hljs-number">964</span>ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">11</span>:<span class="hljs-number">14</span>:<span class="hljs-number">26.593</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro1/.MainActivity: +<span class="hljs-number">944</span>ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">11</span>:<span class="hljs-number">14</span>:<span class="hljs-number">30.477</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro2/.MainActivity: +<span class="hljs-number">950</span>ms
+</code></pre>
+<blockquote>
+<p>&#x4E24;&#x4E2A;App&#x7684;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x57FA;&#x672C;&#x76F8;&#x540C;&#x3002;</p>
+</blockquote>
+<h3 id="activity"><a name="activity" class="anchor-navigation-ex-anchor" href="#activity"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. Activity</h3>
+<p>&#x4FEE;&#x6539;<code>launchpro2.MainActivity</code>&#xFF0C;&#x4F7F;&#x5B83;&#x7EE7;&#x627F;&#x81EA;Activity&#x3002;</p>
+<pre><code class="lang-java">class MainActivity : Activity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+    }
+}
+</code></pre>
+<p>&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x5BF9;&#x6BD4;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">11</span>:<span class="hljs-number">15</span>:<span class="hljs-number">50.018</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro1/.MainActivity: +<span class="hljs-number">951</span>ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">11</span>:<span class="hljs-number">15</span>:<span class="hljs-number">53.812</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro2/.MainActivity: +<span class="hljs-number">707</span>ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">11</span>:<span class="hljs-number">16</span>:<span class="hljs-number">04.844</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro1/.MainActivity: +<span class="hljs-number">952</span>ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">11</span>:<span class="hljs-number">16</span>:<span class="hljs-number">09.812</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro2/.MainActivity: +<span class="hljs-number">705</span>ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">11</span>:<span class="hljs-number">16</span>:<span class="hljs-number">14.044</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro1/.MainActivity: +<span class="hljs-number">959</span>ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">11</span>:<span class="hljs-number">16</span>:<span class="hljs-number">17.936</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro2/.MainActivity: +<span class="hljs-number">719</span>ms
+</code></pre>
+<blockquote>
+<p>&#x76F4;&#x63A5;&#x7EE7;&#x627F;&#x81EA;Activity&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x6BD4;&#x7EE7;&#x627F;&#x81EA;AppCompatActivity&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x66F4;&#x5FEB;&#xFF0C;&#x5927;&#x6982;&#x63D0;&#x901F;<strong>240ms</strong>&#x3002;&#x5176;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x4E3A;710ms&#x5DE6;&#x53F3;&#x3002;</p>
+</blockquote>
+<h3 id="otherapp"><a name="otherapp" class="anchor-navigation-ex-anchor" href="#otherapp"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.3. OtherApp</h3>
+<p>&#x76F4;&#x63A5;&#x4FEE;&#x6539;&#x6211;&#x4EEC;&#x7684;Activity&#x7EE7;&#x627F;&#x81EA;Activity&#xFF0C;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x964D;&#x5230;710ms&#x5DE6;&#x53F3;&#xFF0C;&#x5BF9;&#x6BD4;&#x4E00;&#x4E0B;&#x5176;&#x5B83;&#x5E94;&#x7528;&#xFF0C;Zoom&#x548C;&#x5FAE;&#x4FE1;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed us.zoom.videomeetings/com.zipow.videobox.LauncherActivity: +<span class="hljs-number">527</span>ms
+<span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed us.zoom.videomeetings/com.zipow.videobox.WelcomeActivity: +<span class="hljs-number">215</span>ms
+<span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tencent.mm/.ui.LauncherUI: +<span class="hljs-number">648</span>ms
+<span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed us.zoom.videomeetings/com.zipow.videobox.LauncherActivity: +<span class="hljs-number">386</span>ms
+<span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed us.zoom.videomeetings/com.zipow.videobox.WelcomeActivity: +<span class="hljs-number">147</span>ms
+<span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tencent.mm/.ui.LauncherUI: +<span class="hljs-number">547</span>ms
+</code></pre>
+<p>&#x6D4B;&#x8BD5;&#x7684;&#x4E24;&#x6B21;Zoom&#x7684;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x5206;&#x522B;&#x4E3A;<code>527ms</code>&#x548C;<code>386ms</code>&#xFF0C;&#x800C;&#x5FAE;&#x4FE1;&#x7684;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x4E3A;<code>648ms</code>&#x548C;<code>547ms</code>&#x3002;&#x6211;&#x4EEC;&#x4E0A;&#x9762;&#x7684;&#x5E94;&#x7528;&#x7684;&#x542F;&#x52A8;Activity&#xFF0C;&#x53EA;&#x8BBE;&#x7F6E;&#x4E86;&#x4E00;&#x4E2A;layout&#xFF0C;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x5C45;&#x7136;&#x4E5F;&#x6BD4;Zoom&#x548C;&#x5FAE;&#x4FE1;&#x7684;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x957F;&#xFF0C;<strong>&#x662F;&#x5426;&#x662F;Theme&#x8BBE;&#x7F6E;&#x7684;&#x95EE;&#x9898;&#xFF1F;</strong></p>
+<p>&#x4E0B;&#x9762;&#x7684;&#x65F6;&#x95F4;&#x4E3A;&#x4ECA;&#x65E5;&#x5934;&#x6761;App&#x7684;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-comment">// &#x6709;&#x5E7F;&#x544A;&#x9875;&#x9762;</span>
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">18</span>:<span class="hljs-number">36</span>:<span class="hljs-number">57.136</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.ss.android.article.news/.activity.SplashBadgeActivity: +<span class="hljs-number">1</span>s160ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">18</span>:<span class="hljs-number">37</span>:<span class="hljs-number">01.513</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.ss.android.article.news/.activity.MainActivity: +<span class="hljs-number">886</span>ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">18</span>:<span class="hljs-number">37</span>:<span class="hljs-number">07.117</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.ss.android.article.news/.activity.SplashBadgeActivity: +<span class="hljs-number">1</span>s229ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">18</span>:<span class="hljs-number">37</span>:<span class="hljs-number">13.223</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.ss.android.article.news/.activity.MainActivity: +<span class="hljs-number">902</span>ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">18</span>:<span class="hljs-number">37</span>:<span class="hljs-number">22.350</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed 
+<span class="hljs-comment">// &#x65E0;&#x5E7F;&#x544A;&#x9875;&#x9762;</span>
+com.ss.android.article.news/.activity.MainActivity: +<span class="hljs-number">856</span>ms (total +<span class="hljs-number">1</span>s715ms)
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">18</span>:<span class="hljs-number">37</span>:<span class="hljs-number">33.251</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.ss.android.article.news/.activity.MainActivity: +<span class="hljs-number">898</span>ms (total +<span class="hljs-number">1</span>s781ms)
+</code></pre>
+<p>SplashBadgeActivity&#x662F;&#x5934;&#x6761;App&#x7684;&#x542F;&#x52A8;&#x5E7F;&#x544A;&#x9875;&#x9762;&#xFF0C;&#x8BE5;&#x9875;&#x9762;&#x7684;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x4E3A;<strong>1s200ms</strong>&#x5DE6;&#x53F3;&#xFF0C;&#x800C;&#x4E3B;&#x9875;MainActivity&#x7684;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x5927;&#x6982;&#x4E3A;<strong>900ms</strong>&#x3002;
+&#x65E0;&#x5E7F;&#x544A;&#x65F6;&#xFF0C;&#x5728;SplashBadgeActivity&#x4E2D;&#x4E0D;&#x663E;&#x793A;View&#x76F4;&#x63A5;&#x8FDB;&#x5165;&#x5230;MainActivity&#x9875;&#x9762;&#xFF0C;&#x603B;&#x5171;&#x65F6;&#x95F4;&#x4E3A;<strong>1.7s</strong>&#x5DE6;&#x53F3;&#x3002;</p>
+<h3 id="theme"><a name="theme" class="anchor-navigation-ex-anchor" href="#theme"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.4. Theme</h3>
+<p>&#x53CD;&#x7F16;&#x8BD1;Zoom.apk&#xFF0C;&#x67E5;&#x770B;&#x5B83;&#x7684;LauncherActivity&#x7684;Theme&#x8BBE;&#x7F6E;&#x3002;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">application</span> <span class="hljs-attr">android:icon</span>=<span class="hljs-string">&quot;@drawable/zm_launcher&quot;</span> <span class="hljs-attr">android:label</span>=<span class="hljs-string">&quot;@string/zm_app_name&quot;</span> <span class="hljs-attr">android:largeHeap</span>=<span class="hljs-string">&quot;true&quot;</span>
+             <span class="hljs-attr">android:name</span>=<span class="hljs-string">&quot;com.zipow.videobox.ZoomApplication&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">activity</span> <span class="hljs-attr">android:icon</span>=<span class="hljs-string">&quot;@drawable/zm_launcher&quot;</span> <span class="hljs-attr">android:label</span>=<span class="hljs-string">&quot;@string/zm_app_name&quot;</span>
+              <span class="hljs-attr">android:name</span>=<span class="hljs-string">&quot;com.zipow.videobox.LauncherActivity&quot;</span> <span class="hljs-attr">android:theme</span>=<span class="hljs-string">&quot;@style/ZMTheme.Transparent&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">intent-filter</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">action</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">&quot;android.intent.action.MAIN&quot;</span>/&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">category</span> <span class="hljs-attr">android:name</span>=<span class="hljs-string">&quot;android.intent.category.LAUNCHER&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">intent-filter</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">activity</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">application</span>&gt;</span>
+</code></pre>
+<p>&#x5B83;&#x7684;theme&#x4E3A;<code>ZMTheme.Transparent</code>&#xFF0C;&#x5728;xml&#x91CC;&#x9762;&#x67E5;&#x770B;&#x8BE5;theme&#x7684;&#x914D;&#x7F6E;&#x9879;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;ZMTheme&quot;</span> <span class="hljs-attr">parent</span>=<span class="hljs-string">&quot;@android:style/Theme&quot;</span>&gt;</span><span class="xml">
+    <span class="hljs-tag">&lt;<span class="hljs-name">item</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;android:buttonStyle&quot;</span>&gt;</span>@style/ZMButton<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+    // ...
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;ZMTheme.Transparent&quot;</span> <span class="hljs-attr">parent</span>=<span class="hljs-string">&quot;@style/ZMTheme&quot;</span>&gt;</span><span class="xml">
+    <span class="hljs-tag">&lt;<span class="hljs-name">item</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;android:windowBackground&quot;</span>&gt;</span>@android:color/transparent<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">item</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;android:windowFrame&quot;</span>&gt;</span>@null<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">item</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;android:windowNoTitle&quot;</span>&gt;</span>true<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">item</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;android:windowIsTranslucent&quot;</span>&gt;</span>true<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">item</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;android:windowContentOverlay&quot;</span>&gt;</span>@null<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">item</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;android:backgroundDimEnabled&quot;</span>&gt;</span>false<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">item</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;android:colorBackgroundCacheHint&quot;</span>&gt;</span>@null<span class="hljs-tag">&lt;/<span class="hljs-name">item</span>&gt;</span>
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</code></pre>
+<p>&#x8BE5;theme&#x7EE7;&#x627F;&#x81EA;Android&#x539F;&#x751F;&#x7684;Theme&#xFF0C;&#x9664;&#x6B64;&#x4E4B;&#x5916;&#xFF0C;&#x6DFB;&#x52A0;&#x4E86;<code>windowBackground</code>&#xFF0C;<code>windowFrame</code>&#x548C;<code>windowIsTranslucent</code>&#x3002;&#x5C1D;&#x8BD5;&#x5C06;&#x8BE5;theme&#x914D;&#x7F6E;&#x6DFB;&#x52A0;&#x5230;<code>launchpro2.MainActivity</code>&#xFF0C;&#x518D;&#x5BF9;&#x6BD4;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">11</span>:<span class="hljs-number">22</span>:<span class="hljs-number">57.882</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro1/.MainActivity: +<span class="hljs-number">713</span>ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">11</span>:<span class="hljs-number">23</span>:<span class="hljs-number">02.770</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro2/.MainActivity: +<span class="hljs-number">684</span>ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">11</span>:<span class="hljs-number">23</span>:<span class="hljs-number">08.874</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro1/.MainActivity: +<span class="hljs-number">712</span>ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">11</span>:<span class="hljs-number">23</span>:<span class="hljs-number">13.269</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro2/.MainActivity: +<span class="hljs-number">683</span>ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">11</span>:<span class="hljs-number">23</span>:<span class="hljs-number">24.831</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro1/.MainActivity: +<span class="hljs-number">709</span>ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">11</span>:<span class="hljs-number">23</span>:<span class="hljs-number">29.992</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro2/.MainActivity: +<span class="hljs-number">668</span>ms
+</code></pre>
+<p>&#x548C;&#x6CA1;&#x6DFB;&#x52A0;&#x8BE5;theme&#x7684;<code>launchpro1.MainActivity1</code>&#x76F8;&#x6BD4;&#xFF0C;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x4F3C;&#x4E4E;&#x5C11;&#x4E86;20ms&#xFF0C;&#x4F46;&#x57FA;&#x672C;&#x53EF;&#x4EE5;&#x5FFD;&#x7565;&#x4E0D;&#x8BB0;&#xFF0C;&#x8FDC;&#x672A;&#x8FBE;&#x5230;Zoom&#x7684;500ms&#x4EE5;&#x5185;&#x7684;&#x542F;&#x52A8;&#x901F;&#x5EA6;&#x3002;</p>
+<h3 id="setcontentview"><a name="setcontentview" class="anchor-navigation-ex-anchor" href="#setcontentview"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.5. setContentView()</h3>
+<p>&#x7EE7;&#x7EED;&#x5728;&#x4E0A;&#x9762;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x4FEE;&#x6539;<code>launchpro2.MainActivity</code>&#xFF0C;&#x5728;&#x5176;&#x5B83;onCreate&#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x4E0D;&#x8C03;&#x7528;setContentView&#x8BBE;&#x7F6E;&#x5176;&#x5B83;&#x5E03;&#x5C40;&#xFF0C;&#x6D4B;&#x8BD5;&#x5176;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">11</span>:<span class="hljs-number">33</span>:<span class="hljs-number">51.634</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro1/.MainActivity: +<span class="hljs-number">708</span>ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">11</span>:<span class="hljs-number">33</span>:<span class="hljs-number">55.780</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro2/.MainActivity: +<span class="hljs-number">610</span>ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">11</span>:<span class="hljs-number">34</span>:<span class="hljs-number">00.817</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro1/.MainActivity: +<span class="hljs-number">699</span>ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">11</span>:<span class="hljs-number">34</span>:<span class="hljs-number">06.345</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro2/.MainActivity: +<span class="hljs-number">614</span>ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">11</span>:<span class="hljs-number">34</span>:<span class="hljs-number">11.561</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro1/.MainActivity: +<span class="hljs-number">713</span>ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">11</span>:<span class="hljs-number">34</span>:<span class="hljs-number">17.830</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro2/.MainActivity: +<span class="hljs-number">610</span>ms
+</code></pre>
+<p>&#x672A;&#x8C03;&#x7528;<code>setContentView()</code>&#x65F6;&#xFF0C;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x5927;&#x6982;&#x5728;<code>610ms</code>&#x5DE6;&#x53F3;&#x3002;&#x6BD4;&#x6709;&#x8BBE;&#x7F6E;&#x7684;&#x65F6;&#x5019;&#x964D;&#x4E86;&#x51E0;&#x5341;Ms&#x3002;</p>
+<h3 id="daggeractivity"><a name="daggeractivity" class="anchor-navigation-ex-anchor" href="#daggeractivity"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.6. DaggerActivity</h3>
+<p>&#x4FEE;&#x6539;&#x4E24;&#x4E2A;&#x5DE5;&#x7A0B;&#x4E2D;&#x7684;Activity&#x90FD;&#x7EE7;&#x627F;&#x81EA;AppCompatActivity&#xFF0C;&#x5E76;&#x5728;<code>launchpro2.MainActivity</code>&#x5E94;&#x7528;&#x4E2D;&#x5F15;&#x7528;dagger&#x6846;&#x67B6;&#xFF0C;&#x4F7F;&#x7528;inject&#x6CE8;&#x5165;&#xFF0C;&#x518D;&#x5BF9;&#x6BD4;&#x5176;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">14</span>:<span class="hljs-number">08</span>:<span class="hljs-number">26.406</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro2/.MainActivity: +<span class="hljs-number">1</span>s97ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">14</span>:<span class="hljs-number">08</span>:<span class="hljs-number">32.061</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro1/.MainActivity: +<span class="hljs-number">968</span>ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">14</span>:<span class="hljs-number">08</span>:<span class="hljs-number">41.411</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro2/.MainActivity: +<span class="hljs-number">1</span>s56ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">14</span>:<span class="hljs-number">08</span>:<span class="hljs-number">53.256</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro1/.MainActivity: +<span class="hljs-number">924</span>ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">14</span>:<span class="hljs-number">09</span>:<span class="hljs-number">01.340</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro2/.MainActivity: +<span class="hljs-number">1</span>s76ms
+<span class="hljs-number">06</span>-<span class="hljs-number">23</span> <span class="hljs-number">14</span>:<span class="hljs-number">09</span>:<span class="hljs-number">06.792</span>  <span class="hljs-number">1003</span>  <span class="hljs-number">1171</span> I ActivityManager: Displayed com.tw.launchpro1/.MainActivity: +<span class="hljs-number">944</span>ms
+</code></pre>
+<p>&#x4F7F;&#x7528;inject&#x6CE8;&#x5165;&#x7684;Activity&#xFF0C;&#x6BD4;&#x672A;&#x4F7F;&#x7528;&#x7684;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x8981;&#x591A;<code>100ms</code>&#x5DE6;&#x53F3;&#x3002;</p>
+<blockquote>
+<p>&#x731C;&#x60F3;&#xFF1A;&#x5982;&#x679C;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x6709;&#x5927;&#x91CF;Inject&#x6CE8;&#x5165;&#x914D;&#x7F6E;&#x9700;&#x8981;&#x5728;Application.onCreate()&#x524D;&#x8FDB;&#x884C;&#x6CE8;&#x5165;&#xFF0C;App&#x7684;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x53EF;&#x80FD;&#x4F1A;&#x66F4;&#x957F;&#x3002;</p>
+</blockquote>
+<h2 id="&#x7ED3;&#x8BBA;"><a name="&#x7ED3;&#x8BBA;" class="anchor-navigation-ex-anchor" href="#&#x7ED3;&#x8BBA;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x7ED3;&#x8BBA;</h2>
+<ol>
+<li>AppCompatActivity&#x76F8;&#x6BD4;Activity&#xFF0C;&#x7531;&#x4E8E;&#x5176;&#x6DFB;&#x52A0;&#x4E86;AppTheme&#x6837;&#x5F0F;&#x8BBE;&#x8BA1;&#x652F;&#x6301;&#x5B83;&#x4F1A;&#x9020;&#x6210;&#x5927;&#x6982;240ms&#x7684;&#x5F00;&#x9500;&#x3002;</li>
+<li>Dagger&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x7EC4;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x5927;&#x91CF;&#x7684;Dagger&#x4F9D;&#x8D56;&#x914D;&#x7F6E;&#xFF0C;&#x4E5F;&#x4F1A;&#x5BFC;&#x81F4;&#x989D;&#x5916;&#x7684;&#x542F;&#x52A8;&#x5F00;&#x9500;&#x3002;</li>
+<li>setContentView()&#xFF0C;&#x5728;xml&#x907F;&#x514D;&#x6709;&#x5927;&#x91CF;&#x7684;View&#x5C42;&#x7EA7;&#x5D4C;&#x5957;&#x9020;&#x6210;&#x89E3;&#x6790;&#x8017;&#x65F6;&#x5F00;&#x9500;&#x3002;</li>
+<li>Application.onCreate()&#xFF0C;&#x907F;&#x514D;&#x5728;&#x8BE5;&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x5927;&#x91CF;&#x64CD;&#x4F5C;&#xFF0C;&#x6BD4;&#x5982;&#x7B2C;&#x4E09;&#x65B9;SDK&#xFF0C;&#x6587;&#x4EF6;&#x8BFB;&#x5199;&#x7B49;&#x3002;</li>
+</ol>
+<p>adb shell am start -W us.zoom.videomeetings/com.zipow.videobox.LauncherActivity
+adb shell am start -W com.tw.launchpro1/.MainActivity
+adb shell am start -W com.tencent.mm/.ui.LauncherUI</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="FLAG_ACTIVITY_NEW_TASK.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: FLAG_ACTIVITY_NEW_TASK">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"App启动时间","level":"1.8.2","depth":2,"next":{"title":"AOSP","level":"1.9","depth":1,"ref":"","articles":[{"title":"AOSP源码下载及编译","level":"1.9.1","depth":2,"path":"Sources/AOSP/build.md","ref":"Sources/AOSP/build.md","articles":[]},{"title":"AOSP添加系统服务","level":"1.9.2","depth":2,"path":"Sources/AOSP/add_systemservice.md","ref":"Sources/AOSP/add_systemservice.md","articles":[]}]},"previous":{"title":"FLAG_ACTIVITY_NEW_TASK","level":"1.8.1","depth":2,"path":"Sources/Program/FLAG_ACTIVITY_NEW_TASK.md","ref":"Sources/Program/FLAG_ACTIVITY_NEW_TASK.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors","anchor-navigation-ex"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"isShowTocTitleIcon":false,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"heading-anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"a284628487","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Android","language":"zh-hans","output.name":"site","links":{"sidebar":{}},"gitbook":"3.2.3","description":"Android"},"file":{"path":"Sources/Program/Launch-Optimize.md","mtime":"2019-06-30T14:47:02.401Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-07T11:18:12.421Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

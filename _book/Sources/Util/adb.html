@@ -1,0 +1,1206 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Android ADB命令 · Android</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="a284628487">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Code-check.html" />
+    
+    
+    <link rel="prev" href="git-svn.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Welcome
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    RxJava
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../RxJava/RxJava-Operator.html">
+            
+                <a href="../RxJava/RxJava-Operator.html">
+            
+                    
+                    RxJava常用操作符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../RxJava/RxJava-Flow.html">
+            
+                <a href="../RxJava/RxJava-Flow.html">
+            
+                    
+                    RxJava流程分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../RxJava/RxJava-RxAndroid.html">
+            
+                <a href="../RxJava/RxJava-RxAndroid.html">
+            
+                    
+                    RxAndroid使用UI线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../RxJava/RxJava-Scheduler.html">
+            
+                <a href="../RxJava/RxJava-Scheduler.html">
+            
+                    
+                    Scheduler任务调度器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../RxJava/RxJava-IoScheduler.html">
+            
+                <a href="../RxJava/RxJava-IoScheduler.html">
+            
+                    
+                    IoScheduler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../RxJava/Scheduler-Practice.html">
+            
+                <a href="../RxJava/Scheduler-Practice.html">
+            
+                    
+                    IoScheduler实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    OkHttp
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../OkHttp/OkHttp.html">
+            
+                <a href="../OkHttp/OkHttp.html">
+            
+                    
+                    OkHttp网络请求框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../OkHttp/OkHttp-Interceptor.html">
+            
+                <a href="../OkHttp/OkHttp-Interceptor.html">
+            
+                    
+                    OkHttp拦截器Interceptor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../OkHttp/OkHttp-AddInterceptor.html">
+            
+                <a href="../OkHttp/OkHttp-AddInterceptor.html">
+            
+                    
+                    OkHttp添加Interceptor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Material
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Material/M-BottomAppBar.html">
+            
+                <a href="../Material/M-BottomAppBar.html">
+            
+                    
+                    BottomAppBar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Material/M-BottomNavigationView.html">
+            
+                <a href="../Material/M-BottomNavigationView.html">
+            
+                    
+                    BottomNavigationView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Material/M-Toolbar.html">
+            
+                <a href="../Material/M-Toolbar.html">
+            
+                    
+                    Toolbar
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Jetpack
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Jetpack/Lifecycle-ViewModel.html">
+            
+                <a href="../Jetpack/Lifecycle-ViewModel.html">
+            
+                    
+                    ViewModel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../Jetpack/Lifecycle-Lifecycle.html">
+            
+                <a href="../Jetpack/Lifecycle-Lifecycle.html">
+            
+                    
+                    Handing Lifecycles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../Jetpack/Lifecycle-LiveData.html">
+            
+                <a href="../Jetpack/Lifecycle-LiveData.html">
+            
+                    
+                    LiveData
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Android Crash
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Program/Crash-finalize.html">
+            
+                <a href="../Program/Crash-finalize.html">
+            
+                    
+                    finalize timeout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Program/Crash-JobIntentService.html">
+            
+                <a href="../Program/Crash-JobIntentService.html">
+            
+                    
+                    JobIntentService timeout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Program/Crash-WorkManager.html">
+            
+                <a href="../Program/Crash-WorkManager.html">
+            
+                    
+                    WorkManager initialize
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Program/Crash-res.html">
+            
+                <a href="../Program/Crash-res.html">
+            
+                    
+                    资源文件适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Util
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="git-svn.html">
+            
+                <a href="git-svn.html">
+            
+                    
+                    Git/SVN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.2" data-path="adb.html">
+            
+                <a href="adb.html">
+            
+                    
+                    Android ADB命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="Code-check.html">
+            
+                <a href="Code-check.html">
+            
+                    
+                    代码检查工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Starbucks
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../Program/FLAG_ACTIVITY_NEW_TASK.html">
+            
+                <a href="../Program/FLAG_ACTIVITY_NEW_TASK.html">
+            
+                    
+                    FLAG_ACTIVITY_NEW_TASK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../Program/Launch-Optimize.html">
+            
+                <a href="../Program/Launch-Optimize.html">
+            
+                    
+                    App启动时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    AOSP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../AOSP/build.html">
+            
+                <a href="../AOSP/build.html">
+            
+                    
+                    AOSP源码下载及编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../AOSP/add_systemservice.html">
+            
+                <a href="../AOSP/add_systemservice.html">
+            
+                    
+                    AOSP添加系统服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Node.Js 基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Node.js/NodeJS-Begin.html">
+            
+                <a href="../Node.js/NodeJS-Begin.html">
+            
+                    
+                    NodeJS 入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Node.js/NodeJS-Common-Module.html">
+            
+                <a href="../Node.js/NodeJS-Common-Module.html">
+            
+                    
+                    NodeJS 基础模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../Node.js/NodeJS-Util.html">
+            
+                <a href="../Node.js/NodeJS-Util.html">
+            
+                    
+                    NodeJS Util工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../Node.js/NodeJS-Buffer.html">
+            
+                <a href="../Node.js/NodeJS-Buffer.html">
+            
+                    
+                    NodeJS Buffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../Node.js/NodeJS-File.html">
+            
+                <a href="../Node.js/NodeJS-File.html">
+            
+                    
+                    NodeJS 文件读写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../Node.js/NodeJS-Stream.html">
+            
+                <a href="../Node.js/NodeJS-Stream.html">
+            
+                    
+                    NodeJS Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../Node.js/NodeJS-Crypto.html">
+            
+                <a href="../Node.js/NodeJS-Crypto.html">
+            
+                    
+                    NodeJS 加密模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../Node.js/NodeJS-EventLoop.html">
+            
+                <a href="../Node.js/NodeJS-EventLoop.html">
+            
+                    
+                    NodeJS 事件循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../Node.js/NodeJS-Http.html">
+            
+                <a href="../Node.js/NodeJS-Http.html">
+            
+                    
+                    NodeJS Http模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="../Node.js/NodeJS-Module-Principle.html">
+            
+                <a href="../Node.js/NodeJS-Module-Principle.html">
+            
+                    
+                    NodeJS 模块原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Node.Js 模块实践
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../Node.js/NodeJS-MySQL.html">
+            
+                <a href="../Node.js/NodeJS-MySQL.html">
+            
+                    
+                    NodeJS MySQL数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../Node.js/NodeJS-Express.html">
+            
+                <a href="../Node.js/NodeJS-Express.html">
+            
+                    
+                    NodeJS Express
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../Node.js/NodeJS-Express-Router.html">
+            
+                <a href="../Node.js/NodeJS-Express-Router.html">
+            
+                    
+                    NodeJS Express Router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../Node.js/NodeJS-RESTful-Api.html">
+            
+                <a href="../Node.js/NodeJS-RESTful-Api.html">
+            
+                    
+                    NodeJS RESTful Api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../Node.js/NodeJS-Promise-Callback.html">
+            
+                <a href="../Node.js/NodeJS-Promise-Callback.html">
+            
+                    
+                    NodeJS Promise Callback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../Node.js/NodeJS-EventProxy-Async.html">
+            
+                <a href="../Node.js/NodeJS-EventProxy-Async.html">
+            
+                    
+                    NodeJS EventProxy Async
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../Node.js/NodeJS-ejs.html">
+            
+                <a href="../Node.js/NodeJS-ejs.html">
+            
+                    
+                    NodeJS EJS模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../Node.js/NodeJS-Spider.html">
+            
+                <a href="../Node.js/NodeJS-Spider.html">
+            
+                    
+                    NodeJS Cheerio爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="../Node.js/NodeJS-Excel.html">
+            
+                <a href="../Node.js/NodeJS-Excel.html">
+            
+                    
+                    NodeJS Excel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.10" data-path="../Node.js/NodeJS-Static-File.html">
+            
+                <a href="../Node.js/NodeJS-Static-File.html">
+            
+                    
+                    NodeJS 静态文件服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.11" data-path="../Node.js/NodeJS-Test.html">
+            
+                <a href="../Node.js/NodeJS-Test.html">
+            
+                    
+                    NodeJS 测试框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Android ADB命令</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#adb-&#x547D;&#x4EE4;"><b>1. </b>Adb &#x547D;&#x4EE4;</a></li><ul><li><span class="title-icon "></span><a href="#activitymanageram-&#x547D;&#x4EE4;"><b>1.1. </b>ActivityManager(am &#x547D;&#x4EE4;)</a></li><li><span class="title-icon "></span><a href="#packagemanagerpm-&#x547D;&#x4EE4;"><b>1.2. </b>PackageManager(pm &#x547D;&#x4EE4;)</a></li><li><span class="title-icon "></span><a href="#dumpsys"><b>1.3. </b>dumpsys</a></li><ul><li><span class="title-icon "></span><a href="#cpuinfo"><b>1.3.1. </b>cpuinfo</a></li><li><span class="title-icon "></span><a href="#meminfo"><b>1.3.2. </b>meminfo</a></li></ul><li><span class="title-icon "></span><a href="#&#x5176;&#x5B83;"><b>1.4. </b>&#x5176;&#x5B83;</a></li><ul><li><span class="title-icon "></span><a href="#monkey&#x6D4B;&#x8BD5;"><b>1.4.1. </b>Monkey&#x6D4B;&#x8BD5;</a></li><li><span class="title-icon "></span><a href="#top&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x7CFB;&#x7EDF;&#x8FDB;&#x7A0B;"><b>1.4.2. </b>Top&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x7CFB;&#x7EDF;&#x8FDB;&#x7A0B;</a></li></ul></ul></ul></div><a href="#adb-&#x547D;&#x4EE4;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="adb-&#x547D;&#x4EE4;"><a name="adb-&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#adb-&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>1. Adb &#x547D;&#x4EE4;</h1>
+<h2 id="activitymanageram-&#x547D;&#x4EE4;"><a name="activitymanageram-&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#activitymanageram-&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. ActivityManager(am &#x547D;&#x4EE4;)</h2>
+<p>&#x53D1;&#x9001; intent</p>
+<pre><code class="lang-shell">adb shell am start -a android.intent.action.VIEW
+</code></pre>
+<p>&#x542F;&#x52A8;Activity</p>
+<pre><code class="lang-shell">adb shell am start -n packageName/ClassName
+</code></pre>
+<p>&#x542F;&#x52A8;service</p>
+<pre><code class="lang-shell">adb shell am startservice packageName/ClassName
+</code></pre>
+<p>&#x53D1;&#x9001;&#x5E7F;&#x64AD;</p>
+<pre><code class="lang-shell">adb shell am boradcast -a &#x5E7F;&#x64AD;Action
+</code></pre>
+<p>&#x6740;&#x6B7B;&#x8FDB;&#x7A0B;</p>
+<pre><code class="lang-shell">adb shell am kill packageName
+</code></pre>
+<h2 id="packagemanagerpm-&#x547D;&#x4EE4;"><a name="packagemanagerpm-&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#packagemanagerpm-&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. PackageManager(pm &#x547D;&#x4EE4;)</h2>
+<p>&#x5378;&#x8F7D;apk</p>
+<pre><code class="lang-shell">adb shell pm uninstall &#x5305;&#x540D;
+</code></pre>
+<p>&#x67E5;&#x770B;&#x624B;&#x673A;&#x4E2D;&#x6240;&#x6709;apk &#x5305;&#x540D;</p>
+<pre><code class="lang-shell">adb shell pm list packages
+</code></pre>
+<p>&#x67E5;&#x770B;&#x5DF2;&#x77E5;&#x6743;&#x9650;&#x7EC4;</p>
+<pre><code class="lang-shell">adb shell pm list permission-groups
+</code></pre>
+<p>&#x6E05;&#x9664;app &#x6570;&#x636E;</p>
+<pre><code class="lang-shell">adb shell pm clear &#x5305;&#x540D;
+</code></pre>
+<h2 id="dumpsys"><a name="dumpsys" class="anchor-navigation-ex-anchor" href="#dumpsys"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. dumpsys</h2>
+<p>&#x67E5;&#x770B;&#x6240;&#x6709;&#x53EF;&#x7528;&#x9009;&#x9879;</p>
+<pre><code>adb shell dumpsys -l
+</code></pre><p>&#x7535;&#x91CF;/Wifi</p>
+<pre><code class="lang-shell">adb shell dumpsys battery // &#x7535;&#x91CF;
+adb shell dumpsys wifi // wifi
+</code></pre>
+<h3 id="cpuinfo"><a name="cpuinfo" class="anchor-navigation-ex-anchor" href="#cpuinfo"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. cpuinfo</h3>
+<pre><code class="lang-shell">adb shell dumpsys cpuinfo
+</code></pre>
+<p> &#x8FC7;&#x53BB;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x5185;CPU&#x4F7F;&#x7528;&#x5E73;&#x5747;&#x503C;&#xFF0C;&#x5206;&#x522B;&#x7EDF;&#x8BA1;user&#x7528;&#x6237;&#x6001;&#x548C;kernel&#x5185;&#x6838;&#x6001;&#x3002;</p>
+<pre><code class="lang-tex">Load: 42.36 / 42.51 / 42.97
+
+CPU usage from 412565ms to 112466ms ago (2019-09-20 22:01:07.284 to 2019-09-20 22:06:07.383):
+  3.8<span class="hljs-comment">% 1229/system_server: 2.9% user + 0.8% kernel / faults: 220 minor</span>
+  2<span class="hljs-comment">% 27636/com.starbucks.cn:remote: 1.6% user + 0.3% kernel / faults: 58 minor</span>
+  1.1<span class="hljs-comment">% 20861/com.starbucks.cn: 0.9% user + 0.1% kernel / faults: 118 minor</span>
+  0.8<span class="hljs-comment">% 19478/com.ss.android.article.news: 0.6% user + 0.2% kernel / faults: 144 minor 2 major</span>
+  0.8<span class="hljs-comment">% 2042/com.android.phone: 0.5% user + 0.2% kernel / faults: 1 minor</span>
+  0.4<span class="hljs-comment">% 520/servicemanager: 0.1% user + 0.3% kernel / faults: 1 minor</span>
+  0.4<span class="hljs-comment">% 2023/com.huawei.powergenie: 0.1% user + 0.2% kernel / faults: 14 minor 4 major</span>
+  0.3<span class="hljs-comment">% 782/hiview: 0% user + 0.3% kernel / faults: 366 minor</span>
+  0.2<span class="hljs-comment">% 19979/com.ss.android.article.news:push: 0.1% user + 0.1% kernel / faults: 105 minor</span>
+  0.2<span class="hljs-comment">% 27660/com.starbucks.cn:pushcore: 0.2% user + 0% kernel / faults: 39 minor</span>
+  0.2<span class="hljs-comment">% 20282/com.ss.android.article.news:downloader: 0.1% user + 0.1% kernel / faults: 2 minor</span>
+</code></pre>
+<h3 id="meminfo"><a name="meminfo" class="anchor-navigation-ex-anchor" href="#meminfo"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.2. meminfo</h3>
+<pre><code class="lang-shell">adb shell dumpsys meminfo
+</code></pre>
+<p>&#x624B;&#x673A;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x4FE1;&#x606F;</p>
+<pre><code class="lang-tex">Total PSS by process:
+    342,073K: com.android.systemui (pid 29024)
+    265,106K: system (pid 1229)
+    203,715K: com.starbucks.cn (pid 20861 / activities)
+    111,044K: com.huawei.android.launcher (pid 20439 / activities)
+    108,198K: com.starbucks.cn:leakcanary (pid 18321 / activities)
+    100,692K: android.hardware.graphics.allocator@2.0-service (pid 600)
+     99,516K: com.starbucks.cn:pushcore (pid 27660)
+     96,811K: com.starbucks.cn:remote (pid 27636)
+     90,433K: com.android.systemui:screenshot (pid 19696)
+     77,734K: com.ss.android.article.news:miniapp0 (pid 20296)
+     73,964K: com.ss.android.article.news (pid 19478)
+     64,305K: com.android.gallery3d (pid 24418)
+     61,433K: com.eg.android.AlipayGphone (pid 22339)
+     57,803K: com.android.mediacenter (pid 18676)
+     56,714K: com.baidu.input_huawei (pid 4445)
+     52,188K: com.tencent.mm (pid 1038)
+</code></pre>
+<p>&#x8FD8;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x5305;&#x540D;&#xFF0C;&#x67E5;&#x770B;&#x6307;&#x5B9A;&#x5E94;&#x7528;&#x7684;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x4FE1;&#x606F;</p>
+<pre><code>adb shell dumpsys meminfo com.starbucks.cn
+</code></pre><p>&#x8F93;&#x51FA;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-tex">** MEMINFO in pid 20861 [com.starbucks.cn] **
+                   Pss  Private  Private  SwapPss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap    65370    65228        0       30    97792    67516    30275
+  Dalvik Heap    14765    14752        0       52    18628    13971     4657
+ Dalvik Other    12329    12328        0        0                           
+        Stack      140      140        0        0                           
+       Ashmem      134      132        0        0                           
+    Other dev      141        0      140        0                           
+     .so mmap     4681      432     1952       55                           
+    .jar mmap        0        0        0        0                           
+    .apk mmap    17440      180    11232        0                           
+    .ttf mmap      392        0      148        0                           
+    .dex mmap    57115    47068     7876        0                           
+    .oat mmap       61        0       16        0                           
+    .art mmap     8456     7952       52        0                           
+   Other mmap     1033        4      916        0                           
+    GL mtrack    12868    12868        0        0                           
+      Unknown     7801     7784        0        2                           
+        TOTAL   202865   168868    22332      139   116420    81487    34932
+
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:    22756
+         Native Heap:    65228
+                Code:    68904
+               Stack:      140
+            Graphics:    12868
+       Private Other:    21304
+              System:    11665
+
+               TOTAL:   202865       TOTAL SWAP PSS:      139
+
+ Objects
+               Views:      275         ViewRootImpl:        1
+         AppContexts:        6           Activities:        1
+              Assets:       15        AssetManagers:        0
+       Local Binders:       49        Proxy Binders:       47
+       Parcel memory:       40         Parcel count:      162
+    Death Recipients:        4      OpenSSL Sockets:        0
+</code></pre>
+<p>&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x8FD0;&#x884C;&#x7684;Activity</p>
+<pre><code class="lang-shell">adb shell dumpsys activity | grep Run
+</code></pre>
+<h2 id="&#x5176;&#x5B83;"><a name="&#x5176;&#x5B83;" class="anchor-navigation-ex-anchor" href="#&#x5176;&#x5B83;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x5176;&#x5B83;</h2>
+<p>&#x83B7;&#x53D6;&#x624B;&#x673A;&#x5E8F;&#x5217;&#x53F7;</p>
+<pre><code class="lang-shell">adb get-serialno
+</code></pre>
+<p>&#x83B7;&#x53D6;CPU&#x5E8F;&#x5217;&#x53F7;&#xFF0C;&#x67E5;&#x770B;&#x6838;&#x5FC3;&#x6570;&#x91CF;</p>
+<pre><code class="lang-shell">adb shell cat /proc/cpuinfo
+</code></pre>
+<p>&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x72B6;&#x6001;</p>
+<pre><code class="lang-shell">adb shell cat /proc/meminfo
+</code></pre>
+<p>&#x67E5;&#x770B;bug&#x62A5;&#x544A;</p>
+<pre><code class="lang-shell">adb shell bugreport
+</code></pre>
+<p>&#x4F7F;&#x7528; ps &#x547D;&#x4EE4;&#x67E5;&#x770B;&#x8FDB;&#x7A0B;&#x4FE1;&#x606F;</p>
+<pre><code class="lang-shell">adb shell ps
+</code></pre>
+<h3 id="monkey&#x6D4B;&#x8BD5;"><a name="monkey&#x6D4B;&#x8BD5;" class="anchor-navigation-ex-anchor" href="#monkey&#x6D4B;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.1. Monkey&#x6D4B;&#x8BD5;</h3>
+<pre><code class="lang-shell">adb shell monkey -v -p your.package.name 500
+</code></pre>
+<p>&#x622A;&#x5C4F;</p>
+<pre><code class="lang-shell">adb shell screencap filePath
+</code></pre>
+<h3 id="top&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x7CFB;&#x7EDF;&#x8FDB;&#x7A0B;"><a name="top&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x7CFB;&#x7EDF;&#x8FDB;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#top&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x7CFB;&#x7EDF;&#x8FDB;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.2. Top&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x7CFB;&#x7EDF;&#x8FDB;&#x7A0B;</h3>
+<pre><code class="lang-shell">adb shell top
+</code></pre>
+<p>cpu&#x77AC;&#x65F6;&#x6570;&#x636E;&#x4EE5;top&#x547D;&#x4EE4;&#x8F93;&#x51FA;&#x4E3A;&#x51C6;&#xFF0C;cpuinfo&#x662F;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x5185;&#x7684;&#x5E73;&#x5747;&#x503C;&#xFF0C;&#x800C;&#x4E14;&#x53D7;&#x5176;&#x4ED6;&#x547D;&#x4EE4;&#x5F71;&#x54CD;&#x5927;&#xFF0C;&#x5C24;&#x5176;&#x662F;dumpsys meminfo&#x3002;&#x5EFA;&#x8BAE;&#x7528;<code>busybox top -b -n 1</code>&#xFF0C;&#x5355;&#x6B21;&#x6293;&#x53D6;&#xFF0C;&#x6BD4;&#x7CFB;&#x7EDF;&#x5E26;&#x7684;&#x5FEB;&#xFF0C;&#x8BA1;&#x7B97;&#x7CBE;&#x5EA6;&#x9AD8;&#x4E00;&#x4F4D;&#x3002;</p>
+<blockquote>
+<p>top&#x547D;&#x4EE4;&#x663E;&#x793A;&#x7684;&#x662F;&#x4EFB;&#x52A1;&#x5360;&#x7528;1&#x6838;&#x529F;&#x7387;&#x76F8;&#x5173;&#x7684;cpu&#x4F7F;&#x7528;&#x60C5;&#x51B5;&#xFF0C;&#x5982;&#x679C;&#x4EFB;&#x52A1;&#x4EFB;&#x52A1;&#x5360;&#x7528;200%&#x7684;cpu&#xFF0C;&#x5219;&#x4EFB;&#x52A1;&#x5360;&#x7528;&#x4E24;&#x4E2A;&#x6838;&#x3002;
+top shows CPU percentage PER core, i.e if your task takes up 200% CPU then it&apos;s occupying two cores.</p>
+</blockquote>
+<ul>
+<li><a href="https://testerhome.com/topics/9513" target="_blank">Android &#x83B7;&#x53D6;cpu,fps,men,wifi/gprs &#x6D41;&#x91CF;&#x7B49;&#x503C;</a></li>
+<li><a href="https://superuser.com/questions/174660/why-is-the-cpu-usage-reported-by-top-in-linux-over-100?rq=1" target="_blank">Why is the CPU usage reported by top in Linux over 100%?</a></li>
+<li><a href="https://busybox.net/" target="_blank">busybox</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="git-svn.html" class="navigation navigation-prev " aria-label="Previous page: Git/SVN">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Code-check.html" class="navigation navigation-next " aria-label="Next page: 代码检查工具">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Android ADB命令","level":"1.7.2","depth":2,"next":{"title":"代码检查工具","level":"1.7.3","depth":2,"path":"Sources/Util/Code-check.md","ref":"Sources/Util/Code-check.md","articles":[]},"previous":{"title":"Git/SVN","level":"1.7.1","depth":2,"path":"Sources/Util/git-svn.md","ref":"Sources/Util/git-svn.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors","anchor-navigation-ex"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"isShowTocTitleIcon":false,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"heading-anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"a284628487","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Android","language":"zh-hans","output.name":"site","links":{"sidebar":{}},"gitbook":"3.2.3","description":"Android"},"file":{"path":"Sources/Util/adb.md","mtime":"2019-09-20T14:57:44.159Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-07T11:18:12.421Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
